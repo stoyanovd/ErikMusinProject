@@ -1,0 +1,97 @@
+<div class="container_first landing_main">
+
+    <div class="half single_on_line" style="margin-top:125px;">
+        <div class="pull_right half_right single_on_line">
+            <%= image_tag "landing/first_page/Erik_Musin_designer.svg", {class: "w400", style: "width:400px;"} %>
+        </div>
+    </div>
+
+    <div class="half single_on_line  " style="margin-top: 45px; margin-bottom: 135px; ">
+
+        <nav class="pull_right half_right single_on_line w400 justify_all_between">
+
+            <%= link_to(illustrations_path, class: "") do %>
+                <%= image_tag "landing/first_page/illustration.svg", class: "h_word_link" %>
+            <% end %>
+
+            <%= link_to(logos_path, class: "") do %>
+                <%= image_tag "landing/first_page/logo.svg", class: "h_word_link" %>
+            <% end %>
+
+            <%= link_to(letterings_path, class: "") do %>
+                <%= image_tag "landing/first_page/lettering.svg", class: "h_word_link" %>
+            <% end %>
+
+            <%= link_to({controller: "landing", action: "contacts"}, class: "") do %>
+                <%= image_tag "landing/first_page/contact.svg", class: "h_word_link" %>
+            <% end %>
+        </nav>
+    </div>
+
+    <div class="half single_on_line" style="">
+        <div class="pull_right half_right single_on_line over_hidden" style="margin-bottom: 30px;">
+            <%= image_tag "landing/marker-pencil/marker.svg", class: "w400" %>
+        </div>
+        <div class="pull_right half_right single_on_line over_hidden" style="">
+            <%= image_tag "landing/marker-pencil/pencil.svg", class: "w400" %>
+        </div>
+    </div>
+
+    <div class="half single_on_line" style="margin-top: 160px;">
+        <nav class="pull_right half_right single_on_line w400 justify_all_between" style="width: 280px;">
+
+            <a href="https://dribbble.com/Mrfirst_page" class="">
+                <%= image_tag "landing/first_page/dribbble.svg", class: "w_icon" %>
+            </a>
+            <a href="https://www.behance.net/first_pagemusin" class="">
+                <%= image_tag "landing/first_page/Behance.svg", class: "w_icon" %>
+            </a>
+            <a href="vk.com/first_page_musin" class="">
+                <%= image_tag "landing/first_page/VK.svg", class: "w_icon" %>
+            </a>
+            <a href="http://instagram.com/mr_first_pagem" class="">
+                <%= image_tag "landing/first_page/Instagram.svg", class: "w_icon" %>
+            </a>
+        </nav>
+    </div>
+</div>
+
+
+<div class="container land_illustration ">
+    <%= image_tag "landing/illustration/illustration_word.png", {class: "center_img", style: "width:66%;"} %>
+</div>
+
+
+<div class="container land_logo ">
+    <%= image_tag "landing/logo/logo_word.png", {class: "center_img", style: "width:600px;"} %>
+</div>
+
+
+<div class="container land_lettering ">
+    <%= image_tag "landing/lettering/lettering_word.png", {class: "center_img", style: "width:500px;"} %>
+</div>
+
+<div class="container_last land_contacts fff">
+    <div class="" style="padding-top:190px; margin-bottom: 90px; text-align: center;">
+        Contacts:
+    </div>
+
+    <div class="half single_on_line" style="">
+        <div class="pull_right half_right single_on_line w1200 justify_all_around">
+            <%= image_tag "landing/vector-contacts/vk.svg", {class: "", style: "height:80px;"} %>
+            <%= image_tag "landing/vector-contacts/mail.svg", {class: "", style: "height:80px;"} %>
+        </div>
+    </div>
+
+
+    <div class="half single_on_line" style="margin-top: 30px;">
+        <div class="pull_right half_right single_on_line w1200 justify_all_around">
+        <span>
+            vk.com/erik_musin
+        </span>
+            <span>
+            erikmusin@gmail.com
+            </span>
+        </div>
+    </div>
+</div>

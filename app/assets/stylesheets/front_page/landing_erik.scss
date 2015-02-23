@@ -1,0 +1,45 @@
+.half_right {
+  transform: translate(50%, 0);
+}
+
+.pull_left {
+  float: left;
+}
+
+.pull_right {
+  float: right;
+}
+
+.over_hidden {
+  overflow: hidden;
+}
+
+.justify_all_between {
+  display: flex;
+  justify-content: space-between;
+}
+
+.justify_all_around {
+  display: flex;
+  justify-content: space-around;
+}
+
+.align_center {
+  display: flex;
+  align-content: center;
+}
+
+
+.rel {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.center_img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
