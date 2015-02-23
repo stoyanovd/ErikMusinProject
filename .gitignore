@@ -15,7 +15,9 @@
 /log/*.log
 /tmp
 
-*/fonts/*
+app/assets/fonts
+
+app/assets/images/pngs
 
 ### JetBrains template
 # Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm
