@@ -4,22 +4,24 @@
   outline: none;
 }
 
-.container_first {
+.container {
   width: 100%;
-  height: 800px;
   @include position(relative);
+}
+
+.container_first {
+  @extend .container;
+  height: 800px;
 }
 
 .container_last {
-  width: 100%;
+  @extend .container;
   height: 700px;
-  @include position(relative);
 }
 
-.container {
-  width: 100%;
+.container_common {
+  @extend .container;
   height: 550px;
-  @include position(relative);
 }
 
 .half {
