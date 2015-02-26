@@ -1,19 +1,19 @@
 .landing_main {
-  background-color: #1A1A1A;
+  background-color: $dark_color;
 }
 
 .land_illustration {
-  @include background(url("landing/illustration/illustration_background.svg") #1A1A1A center center / cover no-repeat);
+  @include background(url("landing/illustration/illustration_background.svg") $dark_color center center / cover no-repeat);
 }
 
 .land_logo {
-  background-color: #FFFBF2;
+  background-color: $light_color;
 }
 
 .land_lettering {
-  @include background(url("landing/lettering/lettering_background.svg") #FFFBF2 center / cover no-repeat);
+  @include background(url("landing/lettering/lettering_background.svg") $light_color center / cover no-repeat);
 }
 
 .land_contacts {
-  background-color: #FFFBF2;
+  background-color: $light_color;
 }
