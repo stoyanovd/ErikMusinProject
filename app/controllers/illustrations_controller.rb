@@ -1,5 +1,5 @@
 class IllustrationsController < ApplicationController
-  before_action :set_illustration, only: [:show, :edit, :update, :destroy]
+  before_action :set_illustration, only: [:edit, :update, :destroy]
 
   # GET /illustrations
   # GET /illustrations.json
@@ -13,7 +13,9 @@ class IllustrationsController < ApplicationController
   # GET /illustrations/1
   # GET /illustrations/1.json
   def show
-
+    @pckg = params[:package]
+    print @pckg
+    @illustrations = get_dir_entries(@pckg)
   end
 
   # GET /illustrations/new

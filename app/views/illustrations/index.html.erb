@@ -1,5 +1,5 @@
 <% @pckgs.each do |pck| %>
-    <%= link_to illustration_path(pck) do %>
+    <%= link_to illustration_path, {package: "pck"} do %>
         <%= image_tag "pngs/illustration/" + pck + "/preview.png", class: "pull_left one_third" %>
     <% end %>
 <% end %>
