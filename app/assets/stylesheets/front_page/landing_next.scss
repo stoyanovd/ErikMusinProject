@@ -3,11 +3,7 @@
 }
 
 .land_illustration {
-  background-color: #1A1A1A;
-  background-image: url("/images/illustration.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
+  @include background(url("landing/illustration/illustration_background.svg") #1A1A1A center center / cover no-repeat);
 }
 
 .land_logo {
@@ -15,11 +11,7 @@
 }
 
 .land_lettering {
-  background-color: #FFFBF2;
-  background-image: url("/images/lettering.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position-x: center;
+  @include background(url("landing/lettering/lettering_background.svg") #FFFBF2 center / cover no-repeat);
 }
 
 .land_contacts {

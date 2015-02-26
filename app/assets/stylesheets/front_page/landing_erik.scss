@@ -1,5 +1,5 @@
 .half_right {
-  transform: translate(50%, 0);
+  @include transform(translate(50%, 0));
 }
 
 .pull_left {
@@ -14,32 +14,26 @@
   overflow: hidden;
 }
 
-.justify_all_between {
-  display: flex;
-  justify-content: space-between;
+.justify_all_between {  
+  @include display(flex);
+  @include justify-content(space-between);
 }
 
 .justify_all_around {
-  display: flex;
-  justify-content: space-around;
+  @include display(flex);
+  @include justify-content(space-around);
 }
 
 .align_center {
-  display: flex;
-  align-content: center;
+  @include display(flex);
+  @include align-content(center);
 }
 
-
-.rel {
-  display: table-cell;
-  vertical-align: middle;
-  text-align: center;
-}
 
 .center_img {
-  position: absolute;
+  @include position(absolute);
   top: 50%;
   left: 50%;
   margin-right: -50%;
-  transform: translate(-50%, -50%);
+  @include transform(translate(-50%, -50%));
 }
