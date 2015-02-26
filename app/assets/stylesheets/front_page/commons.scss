@@ -7,17 +7,19 @@
 .container_first {
   width: 100%;
   height: 800px;
-  position: relative;
+  @include position(relative);
 }
+
 .container_last {
   width: 100%;
   height: 700px;
-  position: relative;
+  @include position(relative);
 }
+
 .container {
   width: 100%;
   height: 550px;
-  position: relative;
+  @include position(relative);
 }
 
 .half {
@@ -29,8 +31,10 @@
   clear: both;
 }
 
+/*
 .image_helper {
-  display: inline-block;
+  @include display(inline_block);
   height: 100%;
   vertical-align: middle;
 }
+*/

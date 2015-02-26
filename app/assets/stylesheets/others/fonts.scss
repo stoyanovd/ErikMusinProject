@@ -1,3 +1,6 @@
+@include font-face('718light', "webfontkit/SevenOneEight-Light-webfont" /*, $file-formats:eot woff woff2 ttf svg*/);
+
+/*
 @font-face {
   font-family: '718light';
   src: url('/webfont/SevenOneEight-Light-webfont.eot');
@@ -7,8 +10,9 @@
   url('/webfont/SevenOneEight-Light-webfont.ttf') format('truetype'),
   url('/webfont/SevenOneEight-Light-webfont.svg#718light') format('svg');
 }
+*/
 
-.fff{
+.fff {
   font-family: '718light';
   font-size: 42px;
 }
