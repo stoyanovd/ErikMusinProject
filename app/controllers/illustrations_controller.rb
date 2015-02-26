@@ -13,9 +13,13 @@ class IllustrationsController < ApplicationController
   # GET /illustrations/1
   # GET /illustrations/1.json
   def show
+  end
+  
+  def extra
     @pckg = params[:package]
     print @pckg
-    @illustrations = get_dir_entries(@pckg)
+    @illustrations = get_dir_entries("app/assets/images/pngs/illustration/" + @pckg)
+    render 'extra'
   end
 
   # GET /illustrations/new
