@@ -32,6 +32,11 @@
   }
   :hover {
     color: crimson;
-    text-shadow: 0 0 2px #1883ba;
+    text-shadow: 1px 1px 5px #1883ba;
   }
+}
+
+.box_hover_shading:hover {
+  background-color: crimson;
+  //background-size: 100px 100px;
 }

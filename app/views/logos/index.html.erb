@@ -1,3 +1,5 @@
-<% @logos.each do |logo| %>
-    <%= image_tag "pngs/logo/" + logo, class: "pull_left one_third" %>
-<% end %>
+<div class="logos_pack">
+    <% @logos.each do |logo| %>
+        <%= image_tag "pngs/logo/" + logo, class: "pull_left logos_inner" %>
+    <% end %>
+</div>
