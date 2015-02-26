@@ -14,5 +14,24 @@
 
 .fff {
   font-family: '718light';
-  font-size: 42px;
+  font-size: 36px;
+}
+
+.plain_link {
+  :visited {
+    color: #1883ba;
+    text-decoration: none;
+  }
+  :link {
+    color: #1883ba;
+    text-decoration: none;
+  }
+  :active {
+    color: #1883ba;
+    text-decoration: none;
+  }
+  :hover {
+    color: crimson;
+    text-shadow: 0 0 2px #1883ba;
+  }
 }
