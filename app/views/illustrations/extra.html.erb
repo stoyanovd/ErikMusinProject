@@ -1,21 +1,22 @@
-<div class="w_full" style="background-color:
-        <%case @pckg %>
-        <% when "BASE" %>
-        <%= "#282932" %>
-        <% when "BLUE MAGIC" %>
-        <%= "#3F435E" %>
-        <% when "get taxi" %>
-        <%= "#ffffff" %>
-        <% when "GRAPHICS" %>
-        <%= "#14181B" %>
-        <% when "ORIGINAL" %>
-        <%= "#78B1A7" %>
-        <% when "POSTER BASE" %>
-        <%= "#FFFFFF" %>
-        <% else  %>
-        <%= "#FFFFFF" %>
-        <% end %>
-">
+<div class="w_full"
+     <%= "style=background-color:" %>
+     <% case @pckg %>
+     <% when "BASE" %>
+     <%= "#282932" %>
+     <% when "BLUE MAGIC" %>
+     <%= "#3F435E" %>
+     <% when "get taxi" %>
+     <%= "#ffffff" %>
+     <% when "GRAPHICS" %>
+     <%= "#14181B" %>
+     <% when "ORIGINAL" %>
+     <%= "#78B1A7" %>
+     <% when "POSTER BASE" %>
+     <%= "#FFFFFF" %>
+     <% else %>
+     <%= "#FFFFFF" %>
+     <% end %>
+     <%= "\"" %> >
     <% @illustrations.each do |illustration| %>
         <%= image_tag "pngs/illustration/" + @pckg + "/" + illustration, class: "illustration_extra_inner" %>
     <% end %>
