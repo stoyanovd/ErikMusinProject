@@ -26,3 +26,7 @@
     @extend .contact_link_style;
   }
 }
+
+.contact_link_image:hover {
+  opacity: 0.5;
+}
