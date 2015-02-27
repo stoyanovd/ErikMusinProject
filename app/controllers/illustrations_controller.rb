@@ -19,7 +19,7 @@ class IllustrationsController < ApplicationController
     @pckg = params[:package]
     print @pckg
     @illustrations = get_dir_entries("app/assets/images/pngs/illustration/" + @pckg)
-    render 'extra'
+    render 'extra', layout: 'without_menu'
   end
 
   # GET /illustrations/new

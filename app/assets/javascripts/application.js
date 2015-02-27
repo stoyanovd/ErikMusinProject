@@ -25,6 +25,9 @@ $( document ).ready(function() {
     $(".land_word_lettering").hover(function () {
         $(this).closest(".land_lettering").toggleClass("opacity_lettering");
     });
+    $(".menu_item").hover(function () {
+        $(this).children(".menu_word").toggleClass("hidden");
+    });
     
 });
 

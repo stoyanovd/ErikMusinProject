@@ -1,14 +1,20 @@
 @include font-face('718light', "webfontkit/SevenOneEight-Light-webfont" /*, $file-formats:eot woff woff2 ttf svg*/);
 
-.fff {
+.erik_font {
   font-family: '718light', sans-serif;
+}
+
+.font36 {
   font-size: 36px;
+}
+.font25 {
+  font-size: 25px;
 }
 
 .contact_link_style {
   color: #1883ba;
   text-decoration: none;
-  font-family: '718light', sans-serif;
+  @extend .erik_font;
   font-size: 25px;
 }
 

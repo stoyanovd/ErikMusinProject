@@ -1,11 +1,11 @@
 class LandingController < ActionController::Base
 
   def index
-    render layout: "application"
+    render layout: "without_menu"
   end
 
   def contacts
-    render layout: "application"
+    render layout: "contacts_layout"
   end
 
 

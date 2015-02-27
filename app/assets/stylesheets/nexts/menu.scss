@@ -1,0 +1,64 @@
+$common_height: 110px;
+$first_left: 65px;
+$others_left: 10px;
+$up_margin: 15px;
+
+$item_width: 90px;
+$image_out_size: 40px;
+$image_size: 30px;
+
+$img_word_space : 7px;
+$word_height : 7px;
+
+.menu {
+  @include position(fixed);
+  top: 0;
+  width: $first_left * 2 + $item_width *5 + $others_left * 2;
+  height: $common_height;
+  @include background(linear-gradient(rgba($light_color, 0.2), rgba($light_color, 1)));
+  z-index: 1500;
+}
+
+.main_part_top_margin {
+  margin-top: $common_height + 15px;
+}
+
+.menu_left_space {
+  @extend .pull_left;
+  width: $first_left;
+  height: $common_height - 2 * $up_margin;
+}
+.menu_between_space {
+  @extend .pull_left;
+  width: $others_left;
+  height: $common_height - 2 * $up_margin;
+}
+
+.menu_item {
+  @extend .pull_left;
+  margin-top: $up_margin;
+  margin-bottom: $up_margin;
+  width: $item_width;
+  height: $common_height - 2 * $up_margin;
+}
+
+.menu_image_out {
+  width: $image_out_size;
+  height: $image_out_size;
+  margin-left: ($item_width - $image_out_size) / 2;
+  margin-top: ($common_height - 2 * $up_margin - $image_out_size) / 2;
+}
+
+.menu_image {
+  width: $image_size;
+  height: $image_size;
+  margin-left: ($image_out_size - $image_size) / 2;
+  margin-top: ($image_out_size - $image_size) / 2;
+}
+
+.menu_word {
+  margin-top: $img_word_space;
+  width: $item_width;
+  height: $word_height;
+  text-align: center;
+}

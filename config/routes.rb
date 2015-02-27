@@ -1,12 +1,13 @@
 Rails.application.routes.draw do
   
+  root "landing#index"
+  
   resources :letterings
 
   resources :logos
 
   resources :illustrations
 
-  root "landing#index"
 
   get 'contacts' => "landing#contacts"
   

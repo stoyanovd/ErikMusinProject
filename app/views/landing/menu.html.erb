@@ -1,0 +1,25 @@
+<div class="menu erik_font">
+    <% t_controllers = ["landing", "illustrations", "logos", "letterings", "landing"] %>
+    <% t_actions = ["index", "index", "index", "index", "contacts"] %>
+    <% t_images = ["E", "illustration", "logo", "Lettering", "Contact "] %>
+    <% t_words = ["Home", "illustration", "logo", "lettering", "contact"] %>
+    <% t_classes = ["Home", "illustration", "logo", "lettering", "contact"] %>
+
+    <div class="menu_left_space"></div>
+
+    <% for i in 0..4 do %>
+        <%= link_to({controller: t_controllers[i], action: t_actions[i]}) do %>
+
+            <div class="menu_item">
+                <div class="menu_image_out <%= t_classes[i] + "_back" %>">
+                    <%= image_tag "menu/letters/" + t_images[i] + ".svg", class: "menu_image" %>
+                </div>
+                <div class="menu_word hidden">
+                    <%= t_words[i] %>
+                </div>
+            </div>
+        <% end %>
+
+        <div class="menu_between_space"></div>
+    <% end %>
+</div> 
