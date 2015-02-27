@@ -19,18 +19,12 @@
 
 $( document ).ready(function() {
 
-    $( "a" ).click(function( event ) {
-
-        alert( "As you can see, the link no longer took you to jquery.com" );
-
-        event.preventDefault();
-
-    });
-
     $(".land_word_illustration").hover(function () {
-        $(this).closest(".land_illustration").toggleClass("opacity30");
-        $(this).toggleClass("opacity100");
+        $(this).closest(".land_illustration").toggleClass("opacity_illustration");
     });
+    //$(".logo_word").hover(function () {
+    //    $(this).toggleClass("opacity_logo");
+    //});
 });
 
 
