@@ -14,3 +14,7 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
+$(".land_word_illustration").hover(function() {
+    $(this).closest(".land_illustration").toggleClass("opacity30")
+});

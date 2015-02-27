@@ -6,6 +6,10 @@
   @include background(url("landing/illustration/illustration_background.svg") $dark_color center center / cover no-repeat);
 }
 
+.opacity30 {
+  opacity: 0.3;
+}
+
 .land_logo {
   background-color: $light_color;
 }
@@ -17,3 +21,11 @@
 .land_contacts {
   background-color: $light_color;
 }
+
+.logo_word {
+  @include background(url("landing/logo/logo.svg") center center / auto no-repeat);
+}
+//
+//.logo_word:hover {
+//  opacity: 0.4;
+//}

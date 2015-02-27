@@ -1,5 +1,5 @@
 <div class="w_full"
-     <%= "style=background-color:" %>
+     <%= 'style="background-color:'.html_safe %>
      <% case @pckg %>
      <% when "BASE" %>
      <%= "#282932" %>
@@ -16,7 +16,7 @@
      <% else %>
      <%= "#FFFFFF" %>
      <% end %>
-     <%= "\"" %> >
+     <%= ';"'.html_safe %> >
     <% @illustrations.each do |illustration| %>
         <%= image_tag "pngs/illustration/" + @pckg + "/" + illustration, class: "illustration_extra_inner" %>
     <% end %>
