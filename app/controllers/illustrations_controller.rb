@@ -17,6 +17,9 @@ class IllustrationsController < ApplicationController
   
   def extra
     @pckg = params[:package]
+    unless ["BASE" , "BLUE MAGIC" , "get taxi","GRAPHICS" ,"ORIGINAL","POSTER BASE"].include?(@pckg)
+      render '/public/404.html', :status => '404' and return
+    end
     print @pckg
     @illustrations = get_dir_entries("app/assets/images/pngs/illustration/" + @pckg)
     render 'extra', layout: 'without_menu'

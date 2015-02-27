@@ -1,18 +1,19 @@
 Rails.application.routes.draw do
   
   root "landing#index"
-  
-  resources :letterings
-
-  resources :logos
-
-  resources :illustrations
-
 
   get 'contacts' => "landing#contacts"
-  
+
   controller :illustrations do
+    get 'illustrations' => :index
     get 'illustrations/extra/:package' => :extra
+  end
+
+  controller :letterings do
+    get 'letterings' => :index
+  end
+  controller :logos do
+    get 'logos' => :index
   end
 
   match '*path', via: :all, to: 'application#not_found'
