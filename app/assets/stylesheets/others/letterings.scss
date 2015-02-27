@@ -1,33 +1,7 @@
-.one_third {
-  width: 26%;
-  margin: 30px;
-}
-
-.one_true_third {
-  width:33%;
-}
-.two_true_third {
-  width:66%;
-}
-
-$l_row : 5;
-$space_between : 40px;
-$space_first : 90px;
-
 .letterings_inner {
-  margin-left: $space_between;
+  display: inline-block;
+  margin-left: 40px;
   margin-bottom: 30px;
-  width: (1535px - (($l_row - 1) * $space_between + $space_first * 2)) / $l_row;
-}
-
-.letterings_pack:nth-child(-n + #{$l_row}) {
-  margin-top: 30px;
-}
-
-.letterings_pack:nth-child(#{$l_row}n + 1) {
-  margin-left: $space_first;
-}
-
-.letterings_pack:nth-child(#{$l_row}n + #{$l_row}) {
-  clear: both;
+  width:250px;
+  text-align: left;
 }

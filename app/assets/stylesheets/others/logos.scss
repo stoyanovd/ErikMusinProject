@@ -1,21 +1,7 @@
-$logo_row : 5;
-$space_between_logo : 40px;
-$space_first_logo : 90px;
-
 .logos_inner {
-  margin-left: $space_between_logo;
+  display: inline-block;
+  margin-left: 50px;
   margin-bottom: 30px;
-  width: (1535px - (($logo_row - 1) * $space_between_logo + $space_first_logo * 2)) / $logo_row;
-}
-
-.logos_pack:nth-child(-n + #{$logo_row}) {
-  margin-top: 30px;
-}
-
-.logos_pack:nth-child(#{$logo_row}n + 1) {
-  margin-left: $space_first_logo;
-}
-
-.logos_pack:nth-child(#{$logo_row}n + #{$logo_row}) {
-  clear: both;
+  width:310px;
+  text-align: left;
 }
