@@ -1,6 +1,5 @@
-
 .h_word_link {
-  height:17px;
+  height: 17px;
   opacity: 1;
 }
 
@@ -12,32 +11,37 @@
   width: 27px;
   height: 27px;
   display: block;
-  background-size: cover;
+  @include background-size(cover);
 }
+
 .dribble_icon {
-  background-image: url("landing/first_page_white/dribbble.svg");
+  @include background-image(url("landing/first_page_white/dribbble.svg"));
 }
+
 .dribble_icon:hover {
-  background-image: url("landing/first_page/dribbble.svg");
+  @include background-image(url("landing/first_page/dribbble.svg"));
 }
 
 .behance_icon {
-  background-image: url("landing/first_page_white/Behance.svg");
+  @include background-image(url("landing/first_page_white/Behance.svg"));
 }
+
 .behance_icon:hover {
-  background-image: url("landing/first_page/Behance.svg");
+  @include background-image(url("landing/first_page/Behance.svg"));
 }
 
 .vk_icon {
-  background-image: url("landing/first_page_white/VK.svg");
+  @include background-image(url("landing/first_page_white/VK.svg"));
 }
+
 .vk_icon:hover {
-  background-image: url("landing/first_page/VK.svg");
+  @include background-image(url("landing/first_page/VK.svg"));
 }
 
 .insta_icon {
-  background-image: url("landing/first_page_white/Instagramm.svg");
+  @include background-image(url("landing/first_page_white/Instagramm.svg"));
 }
+
 .insta_icon:hover {
-  background-image: url("landing/first_page/Instagram.svg");
+  @include background-image(url("landing/first_page/Instagram.svg"));
 }
