@@ -20,12 +20,17 @@
 }
 
 .logo_word:hover {
-  @include background(linear-gradient(to bottom, rgba($light_color,0.7),rgba($light_color,0.7) ),
+  @include background(linear-gradient(to bottom, rgba($light_color,0.45),rgba($light_color,0.45) ),
           url("landing/logo/Line.svg") $light_color center center / cover no-repeat);
 }
 
 .land_lettering {
   @include background(url("landing/lettering/lettering_background.svg") $light_color center / cover no-repeat);
+}
+
+.opacity_lettering {
+  @include background(linear-gradient(to bottom, rgba(255,255,255,0.3) ,rgba(255,255,255,0.3) ),
+          url("landing/lettering/lettering_background.svg") $dark_color center center / cover no-repeat);
 }
 
 .land_contacts {

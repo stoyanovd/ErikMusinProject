@@ -22,9 +22,10 @@ $( document ).ready(function() {
     $(".land_word_illustration").hover(function () {
         $(this).closest(".land_illustration").toggleClass("opacity_illustration");
     });
-    //$(".logo_word").hover(function () {
-    //    $(this).toggleClass("opacity_logo");
-    //});
+    $(".land_word_lettering").hover(function () {
+        $(this).closest(".land_lettering").toggleClass("opacity_lettering");
+    });
+    
 });
 
 
