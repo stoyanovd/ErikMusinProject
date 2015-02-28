@@ -17,7 +17,17 @@
 
 
 
-$( document ).ready(function() {
+$(function () {
+    initPage();
+});
+$(window).bind('page:change', function () {
+    initPage();
+});
+
+function initPage() {
+    // Page ready code...
+    
+    //$(document).ready(function () {
 
     $(".land_word_illustration").hover(function () {
         $(this).closest(".land_illustration").toggleClass("opacity_illustration");
@@ -28,7 +38,6 @@ $( document ).ready(function() {
     $(".menu_item").hover(function () {
         $(this).children(".menu_word").toggleClass("hidden");
     });
-    
-});
 
-
+    //});
+}
