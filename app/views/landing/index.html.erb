@@ -10,21 +10,15 @@
 
         <nav class="pull_right half_right single_on_line w400 justify_all_between">
 
-            <%= link_to(illustrations_path, class: "") do %>
-                <%= image_tag "landing/first_page/illustration.svg", class: "h_word_link" %>
-            <% end %>
+            <%= link_to("illustration", illustrations_path, class: "plain_link color_link_illustration")  %>
 
-            <%= link_to(logos_path, class: "") do %>
-                <%= image_tag "landing/first_page/logo.svg", class: "h_word_link" %>
-            <% end %>
+            <%= link_to("logo", logos_path, class: "plain_link color_link_logo") %>
 
-            <%= link_to(letterings_path, class: "") do %>
-                <%= image_tag "landing/first_page/lettering.svg", class: "h_word_link" %>
-            <% end %>
+            <%= link_to("lettering", letterings_path, class: "plain_link color_link_lettering") %>
 
-            <%= link_to({controller: "landing", action: "contacts"}, class: "") do %>
-                <%= image_tag "landing/first_page/contact.svg", class: "h_word_link" %>
-            <% end %>
+            <%= link_to("contact", {controller: "landing", action: "contacts"}, class: "plain_link color_link_contact") %>
+            
+            <%= link_to("about", {controller: "landing", action: "about"}, class: "plain_link color_link_about") %>
         </nav>
     </div>
 

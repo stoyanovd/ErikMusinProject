@@ -1,25 +1,28 @@
-<div class="menu erik_font">
-    <% t_controllers = ["landing", "illustrations", "logos", "letterings", "landing"] %>
-    <% t_actions = ["index", "index", "index", "index", "contacts"] %>
-    <% t_images = ["E", "illustration", "logo", "Lettering", "Contact "] %>
-    <% t_words = ["Home", "illustration", "logo", "lettering", "contact"] %>
-    <% t_classes = ["Home", "illustration", "logo", "lettering", "contact"] %>
+<div class="menu">
 
-    <div class="menu_left_space"></div>
+    <div class=" menu_inner_container">
 
-    <% for i in 0..4 do %>
-        <%= link_to({controller: t_controllers[i], action: t_actions[i]}) do %>
+        <div class="pull_left" style="height: 30px; width: 100px;"></div>
 
-            <div class="menu_item">
-                <div class="menu_image_out <%= t_classes[i] + "_back" %>">
-                    <%= image_tag "menu/letters/" + t_images[i] + ".svg", class: "menu_image" %>
-                </div>
-                <div class="menu_word hidden">
-                    <%= t_words[i] %>
-                </div>
-            </div>
+        <%= link_to(root_path, class: "pull_left") do %>
+            <%= image_tag "landing/first_page/Erik_Musin_designer.svg", class: "menu_erik pull_left" %>
         <% end %>
 
-        <div class="menu_between_space"></div>
-    <% end %>
-</div> 
+        <div class="pull_left" style="height: 30px;  width: 95px;"></div>
+
+        <nav class="pull_left justify_all_around" style="width: 990px;">
+
+
+            <%= link_to("illustration", illustrations_path, class: "plain_link color_link_illustration") %>
+
+            <%= link_to("logo", logos_path, class: "plain_link color_link_logo") %>
+
+            <%= link_to("lettering", letterings_path, class: "plain_link color_link_lettering") %>
+
+            <%= link_to("contact", {controller: "landing", action: "contacts"}, class: "plain_link color_link_contact") %>
+
+            <%= link_to("about", {controller: "landing", action: "about"}, class: "plain_link color_link_about") %>
+        </nav>
+
+    </div>
+</div>

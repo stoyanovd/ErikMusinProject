@@ -7,30 +7,14 @@
 .font36 {
   font-size: 36px;
 }
+
 .font25 {
   font-size: 25px;
 }
 
 .contact_link_style {
-  color: #1883ba;
   text-decoration: none;
   @extend .erik_font;
-  font-size: 25px;
-}
-
-.plain_link {
-  :link {
-    @extend .contact_link_style;
-  }
-  :visited {
-    @extend .contact_link_style;
-  }
-  :hover {
-    @extend .contact_link_style;
-  }
-  :active {
-    @extend .contact_link_style;
-  }
 }
 
 .contact_link_image:hover {

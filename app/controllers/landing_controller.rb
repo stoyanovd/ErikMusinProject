@@ -7,6 +7,10 @@ class LandingController < ActionController::Base
   def contacts
     render layout: "contacts_layout"
   end
+  
+  def about
+    render layout: "contacts_layout"
+  end
 
 
 end

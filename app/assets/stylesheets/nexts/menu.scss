@@ -1,22 +1,33 @@
 $common_height: 110px;
-$first_left: 65px;
-$others_left: 10px;
+$first_left: 0px;
+$others_left: 40px;
 $up_margin: 15px;
 
 $item_width: 90px;
 $image_out_size: 40px;
 $image_size: 30px;
 
-$img_word_space : 7px;
-$word_height : 7px;
+$img_word_space: 7px;
+$word_height: 7px;
+
+.menu_erik {
+  margin-top: $up_margin;
+  height: 70px;
+}
 
 .menu {
   @include position(fixed);
   top: 0;
-  width: $first_left * 2 + $item_width *5 + $others_left * 2;
+  width: 100%;
   height: $common_height;
-  @include background(linear-gradient(rgba($light_color, 0.2), rgba($light_color, 1)));
+  line-height: $common_height;
+  background-color: $dark_color;
   z-index: 1500;
+}
+
+.menu_inner_container {
+  width: 1520px;
+  height: $common_height;
 }
 
 .main_part_top_margin {
@@ -24,14 +35,15 @@ $word_height : 7px;
 }
 
 .menu_left_space {
-  @extend .pull_left;
+//  @extend .pull_left;
   width: $first_left;
-  height: $common_height - 2 * $up_margin;
+  height: $common_height;
 }
+
 .menu_between_space {
-  @extend .pull_left;
+//  @extend .pull_left;
   width: $others_left;
-  height: $common_height - 2 * $up_margin;
+  height: $common_height;
 }
 
 .menu_item {

@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   root "landing#index"
 
   get 'contacts' => "landing#contacts"
+  get 'about' => "landing#about"
 
   controller :illustrations do
     get 'illustrations' => :index

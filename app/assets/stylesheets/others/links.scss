@@ -1,0 +1,35 @@
+.color_link_illustration {
+  color: #F9AF43;
+}
+
+.color_link_logo {
+  color: #F05454;
+}
+
+.color_link_lettering {
+  color: #F2F2F2;
+}
+
+.color_link_contact {
+  color: #6BBD46;
+}
+
+.color_link_about {
+  color: #D6DF23;
+}
+
+.plain_link:link {
+  @extend .contact_link_style;
+}
+
+.plain_link:visited {
+  @extend .contact_link_style;
+}
+
+.plain_link:hover {
+  @extend .contact_link_style;
+}
+
+.plain_link:active {
+  @extend .contact_link_style;
+}
