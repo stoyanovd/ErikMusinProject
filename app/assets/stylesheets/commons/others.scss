@@ -1,0 +1,29 @@
+.half {
+  float: left;
+  width: 50%;
+}
+
+.single_on_line {
+  clear: both;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.hidden_down {
+  visibility: hidden;
+  height: 0px;
+}
+
+/*
+.image_helper {
+  @include display(inline_block);
+  height: 100%;
+  vertical-align: middle;
+}
+*/
+
+.between_space {
+  height: 10px;
+}

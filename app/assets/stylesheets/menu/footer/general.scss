@@ -1,0 +1,13 @@
+$footer_height:150px;
+
+// 27px; icon size
+
+.footer {
+  height: $footer_height;
+  background-color: $dark_color;
+  width: 100%;
+}
+
+.footer_inner_container {
+  height: 95px;
+}

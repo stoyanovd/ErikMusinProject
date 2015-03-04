@@ -1,0 +1,11 @@
+.jerry_footer {
+  width: 100%;
+  height: 160px;
+
+  @include background(url("landing/vector-contacts/Jerry.png") $dark_color center center / cover no-repeat);
+}
+
+.contacts_full_back {
+  @include background(url("landing/vector-contacts/texture-contact.png") $light_color center center / auto);
+}
+

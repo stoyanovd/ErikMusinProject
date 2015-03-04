@@ -1,0 +1,26 @@
+$common_height: 110px;
+
+.menu_erik {
+  height: 50px;
+  margin-top: 30px;
+}
+
+.menu {
+  @include position(fixed);
+  top: 0;
+  width: 100%;
+  height: $common_height;
+  line-height: $common_height;
+  background-color: $dark_color;
+  z-index: 1500;
+}
+
+.menu_inner_container {
+  width: 1520px;
+  height: $common_height;
+}
+
+.main_part_top_margin {
+  margin-top: $common_height + 25px;
+}
+

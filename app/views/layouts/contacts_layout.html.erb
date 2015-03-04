@@ -8,20 +8,46 @@
     <meta name="viewport" content="width=450px, initial-scale=0.25">
 </head>
 
-<!--class="grand_body"-->
-<body class="land_contacts">
-
-<!--<div class="grand">-->
+<body class="contacts_full_back">
 
 <%= render file: "landing/menu" %>
+
 <div class="main_part_top_margin w_full">
 
-    <%= yield %>
+    <div class="container_full_contacts erik_font">
+
+        <div class="half_down" style="margin-top: -30px;">
+
+            <div class="half" style="">
+                <div class="pull_right " style=" margin-right: 30px; ">
+
+                    <a href="mailto:erikmusin@gmail.com">
+                        <%= image_tag "landing/vector-contacts/mail.svg", {class: "contact_link_image", style: "height:30px;"} %>
+                    </a>
+                </div>
+            </div>
+
+            <div class="half" style="">
+
+                <div class="pull_left " style="margin-left: 30px; ">
+                    <%= link_to "http://vk.com/erik_musin" do %>
+                        <%= image_tag "landing/vector-contacts/vk.svg", {class: "contact_link_image", style: "height:30px;"} %>
+                    <% end %>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <style>
+        .triangle_contacts {
+            visibility: visible;
+        }
+    </style>
 
 </div>
 
-<!--</div>-->
-
+<div class="jerry_footer"></div>
 </body>
 
 </html>

@@ -1,0 +1,39 @@
+
+.footer_dribble_icon {
+  @include background-image(url("landing/first_page_white/dribbble.svg"));
+}
+
+.footer_dribble_icon:hover {
+  @include background-image(url("landing/footer_icons/dribbble-white.svg"));
+}
+
+.footer_behance_icon {
+  @include background-image(url("landing/first_page_white/Behance.svg"));
+}
+
+.footer_behance_icon:hover {
+  @include background-image(url("landing/footer_icons/Behance-white.svg"));
+}
+
+.footer_vk_icon {
+  @include background-image(url("landing/first_page_white/VK.svg"));
+}
+
+.footer_vk_icon:hover {
+  @include background-image(url("landing/footer_icons/VK-white.svg"));
+}
+
+.footer_insta_icon {
+  @include background-image(url("landing/first_page_white/Instagramm.svg"));
+}
+
+.footer_insta_icon:hover {
+  @include background-image(url("landing/footer_icons/Instagramm-white.svg"));
+}
+
+.footer_mail_icon {
+  @include background-image(url("landing/footer_icons/mail.svg"));
+}
+.footer_mail_icon:hover {
+  @include background-image(url("landing/footer_icons/mail-green.svg"));
+}

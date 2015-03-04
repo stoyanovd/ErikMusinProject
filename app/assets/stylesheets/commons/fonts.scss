@@ -1,0 +1,27 @@
+@include font-face('718light', "718/common/SevenOneEight-Light-webfont" /*, $file-formats:eot woff woff2 ttf svg*/);
+
+@include font-face('718light Bold', "718/common/SevenOneEight-Bold-webfont" /*, $file-formats:eot woff woff2 ttf svg*/);
+
+.erik_font {
+  font-family: '718light', sans-serif;
+}
+
+.about_plain_font {
+  font-family: Helvetica, sans-serif;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.font36 {
+  font-size: 36px;
+}
+
+.font25 {
+  font-size: 25px;
+}
+
+.gray_font {
+  color: $gray_font_color;
+}

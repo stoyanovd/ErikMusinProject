@@ -1,4 +1,4 @@
-<div class="letterings_pack">
+<div class="">
     <% @letterings_1.each do |lettering| %>
         <%= image_tag "pngs/Lettering/pc/" + lettering, class: "letterings_inner" %>
     <% end %>
@@ -6,3 +6,9 @@
         <%= image_tag "pngs/Lettering/hand/" + lettering, class: "letterings_inner" %>
     <% end %>
 </div>
+
+<style>
+    .triangle_lettering {
+        visibility: visible;
+    }
+</style>

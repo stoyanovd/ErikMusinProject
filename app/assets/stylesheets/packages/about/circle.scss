@@ -1,0 +1,28 @@
+$circle_size: 55px;
+
+.circle_button {
+  width: $circle_size;
+  height: $circle_size;
+
+  background-color: $gray_color;
+  @include border-bottom-radius(50px);
+  @include border-left-radius(50px);
+  @include border-right-radius(50px);
+  @include border-top-radius(50px);
+  
+  text-align: center;
+  line-height: $circle_size;
+  
+  @extend .bold;
+  
+  color: #ffffff;
+}
+
+
+.circles_panel {
+  width: 170px;
+}
+
+.circle_pressed {
+  background-color: $about_color;
+}

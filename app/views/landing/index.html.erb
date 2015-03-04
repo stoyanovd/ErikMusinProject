@@ -31,7 +31,7 @@
     <!--</div>-->
     <!--</div>-->
 
-    <div class="half single_on_line" style="margin-top: 0px;">
+    <div class="half single_on_line" style="">
         <nav class="pull_right half_right single_on_line w400 justify_all_between" style="width: 280px;">
 
             <a href="https://dribbble.com/Mrerik" class="">
@@ -59,13 +59,10 @@
 
 
 <div class="container_common land_logo ">
-    <div class="half pos_rel">
-
-        <div class="pull_right half_right half_down w500 back_logo h250 " style="margin-right: -250px; margin-top: 30px;">
-            <%= link_to(logos_path, class: "") do %>
-                <%= image_tag "landing/logo/logo.svg", {class: "center_img logo_word w500", style: ""} %>
-            <% end %>
-        </div>
+    <div class="center_img w500 h250 land_logo_inner_container" style="">
+        <%= link_to(logos_path, class: "") do %>
+            <%= image_tag "landing/logo/Line.svg", {class: " land_word_logo w500", style: ""} %>
+        <% end %>
     </div>
 </div>
 

@@ -1,0 +1,22 @@
+
+.man_icon {
+  @include background-image(url("landing/about/man.svg"));
+}
+
+.man_icon:hover {
+  @include background-image(url("landing/about-green/man.svg"));
+}
+.hat_icon {
+  @include background-image(url("landing/about/hat.svg"));
+}
+
+.hat_icon:hover {
+  @include background-image(url("landing/about-green/hat.svg"));
+}
+.pencil_icon {
+  @include background-image(url("landing/about/pencil.svg"));
+}
+
+.pencil_icon:hover {
+  @include background-image(url("landing/about-green/pencil.svg"));
+}

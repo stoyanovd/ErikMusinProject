@@ -19,8 +19,14 @@
      <%= ';"'.html_safe %> >
 
     <%= render file: "landing/menu" %>
-        
+
     <% @illustrations.each do |illustration| %>
         <%= image_tag "pngs/illustration/" + @pckg + "/" + illustration, class: "illustration_extra_inner" %>
     <% end %>
-    </div>
+</div>
+
+<style>
+    .triangle_illustration {
+        visibility: visible;
+    }
+</style>

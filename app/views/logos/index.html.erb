@@ -1,5 +1,11 @@
-<div class="logos_pack">
+<div class="">
     <% @logos.each do |logo| %>
         <%= image_tag "pngs/logo/" + logo, class: "logos_inner" %>
     <% end %>
 </div>
+
+<style>
+    .triangle_logo {
+        visibility: visible;
+    }
+</style>

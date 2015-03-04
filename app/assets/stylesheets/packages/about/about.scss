@@ -1,0 +1,33 @@
+$column_width: 350px;
+$icon_size: 150px;
+$text_width: 200px;
+
+.about_item {
+  width: $column_width;
+  position: relative;
+}
+
+.about_image {
+  width: $icon_size;
+  height: $icon_size;
+
+  margin-left: ($column_width - $icon_size) / 2;
+  @include background-size(cover);
+}
+
+.about_text_column {
+  text-align: justify;
+  margin-top: 30px;
+}
+.about_text_column_small {
+  text-align: justify;
+  margin-top: 30px;
+  width: 200px;
+  margin-left: ( $column_width - $text_width) / 2
+}
+
+.lang_field {
+  position: absolute;
+
+  @extend .about_plain_font;
+}
