@@ -17,7 +17,14 @@
 }
 
 .logo_word {
-  @include background(url("landing/logo/Line.svg") $light_color center center / auto no-repeat);
+//  @include background(url("landing/logo/Line.svg") $light_color center center / auto no-repeat);
+}
+
+.land_about {  
+}
+
+.back_logo {
+  @include background(url("landing/logo/Line.svg") $light_color center center / cover no-repeat);
 }
 
 .logo_word:hover {
@@ -35,5 +42,7 @@
 }
 
 .land_contacts {
-  background-color: $light_color;
+  @include background(url("landing/about/texture-contact.png") $light_color center center / cover);
+
+  @include background(url("landing/vector-contacts/Jerry.png") $dark_color center center / cover no-repeat);
 }

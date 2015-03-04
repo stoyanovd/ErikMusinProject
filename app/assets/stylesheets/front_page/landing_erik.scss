@@ -2,6 +2,12 @@
   @include transform(translate(50%, 0));
 }
 
+.half_down {
+  position: relative;
+  top: 50%;
+  @include transform(translateY(50%));
+}
+
 .pull_left {
   float: left;
 }
@@ -14,7 +20,7 @@
   overflow: hidden;
 }
 
-.justify_all_between {  
+.justify_all_between {
   @include display(flex);
   @include justify-content(space-between);
 }
@@ -28,7 +34,6 @@
   @include display(flex);
   @include align-content(center);
 }
-
 
 .center_img {
   @include position(absolute);
