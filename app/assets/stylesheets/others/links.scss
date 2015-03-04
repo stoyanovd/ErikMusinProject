@@ -18,18 +18,3 @@
   color: #D6DF23;
 }
 
-.plain_link:link {
-  @extend .contact_link_style;
-}
-
-.plain_link:visited {
-  @extend .contact_link_style;
-}
-
-.plain_link:hover {
-  @extend .contact_link_style;
-}
-
-.plain_link:active {
-  @extend .contact_link_style;
-}

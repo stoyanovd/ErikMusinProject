@@ -20,6 +20,29 @@
 .contact_link_style:hover {
   opacity: 0.5;
 }
+
 .contact_link_image:hover {
   opacity: 0.5;
+}
+
+.plain_link:link {
+  @extend .contact_link_style;
+}
+
+.plain_link:visited {
+  @extend .contact_link_style;
+}
+
+.plain_link:hover {
+  @extend .contact_link_style;
+}
+
+.plain_link:active {
+  @extend .contact_link_style;
+}
+
+.erik_font {
+  a {
+    @extend .plain_link;
+  }
 }
