@@ -15,18 +15,9 @@
 //= require turbolinks
 //= require_tree .
 
-
-$(function () {
-    initPage();
-});
-$(window).bind('page:change', function () {
-    initPage();
-});
-
 function initPage() {
     // Page ready code...
 
-    $(document).ready(function () {
 
         $(".land_word_illustration").hover(function () {
             $(this).closest(".land_illustration").toggleClass("opacity_illustration");
@@ -41,9 +32,19 @@ function initPage() {
         $(".menu_item").hover(function () {
             $(this).children(".menu_word").toggleClass("hidden");
         });
+        $(".container_last").hover(function () {
+            $(this).find(".mail_to_animate").addClass("mail_animation");
+            $(this).find(".vk_to_animate").addClass("vk_animation");
+        }, function () {
+            $(this).find(".mail_to_animate").removeClass("mail_animation");
+            $(this).find(".vk_to_animate").removeClass("vk_animation");
+        });
 
-    });
 }
+
+$(document).ready(initPage);
+$(document).on('page:load', initPage);
+
 
 function changeLanguage() {
     $(".circle_button").toggleClass("circle_pressed");

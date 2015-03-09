@@ -4,33 +4,33 @@
   @include position(relative);
 }
 
-.container_first {
-  @extend .container;
-  height: 800px;
-}
-
 .container_common {
   @extend .container;
   height: 550px;
 }
 
+.container_first {
+  @extend .container;
+  height: 800px;
+}
+
 .container_last {
-  @extend .container_common;
+  @extend .container;
   height: 160px;
 }
 
 .container_about {
-  @extend .container_common;
+  @extend .container;
   height: 1000px;
 }
 
 .container_full_contacts {
-  @extend .container_common;
+  @extend .container;
   height: 500px;
 }
 
 .container_huge {
-  @extend .container_common;
+  @extend .container;
   height: 1300px;
 }
 

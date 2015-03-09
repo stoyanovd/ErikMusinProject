@@ -1,0 +1,34 @@
+$Jerry_height: 160px;
+
+.contacts_full_back {
+  @include background(url("landing/vector-contacts/texture-contact.png") $light_color center center / auto);
+}
+
+.page-wrap {
+  min-height: 100%;
+  /* equal to footer height */
+  margin-bottom: -($Jerry_height + 25px);
+}
+
+.page-wrap:after {
+  content: "";
+  display: block;
+}
+
+.site-footer, .page-wrap:after {
+  /* .push must be the same height as footer */
+  height: $Jerry_height;
+}
+
+.site-footer {
+  background: orange;
+}
+
+.jerry_footer {
+  @include background(url("landing/vector-contacts/Jerry_cut.png") left center / auto no-repeat,
+          url("landing/vector-contacts/texture-contact.png") center center / auto);
+}
+
+.jerry_back {
+  @include background(url("landing/vector-contacts/texture-contact.png") center center / auto);
+}

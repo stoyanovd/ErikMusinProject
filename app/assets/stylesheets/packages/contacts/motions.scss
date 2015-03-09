@@ -1,0 +1,40 @@
+@include keyframes(left_move) {
+  0% {
+    @include transform(translateX(115%));
+  }
+  100% {
+    @include transform(translateX(0));
+  }
+}
+
+@include keyframes(right_move) {
+  0% {
+    @include transform(translateX(-115%));
+  }
+  100% {
+    @include transform(translateX(0));
+  }
+}
+
+@include keyframes(appear) {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.mail_animation {
+  @include animation(left_move 0.7s , appear 1s ease);
+}
+
+.vk_animation {
+  @include animation(right_move 0.7s ease-in, appear 1s ease);
+}
+
+.mail_to_animate {
+}
+
+.vk_to_animate {
+}

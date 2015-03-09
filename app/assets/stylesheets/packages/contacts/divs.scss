@@ -1,0 +1,41 @@
+$land_contacts_height: 160px;
+$land_contacts_img_width: 85px;
+$land_contacts_title_offset: $land_contacts_img_width + 20px;
+$land_cont_space: 3px;
+
+.half_pack {
+  @extend .half;
+  height: $land_contacts_height;
+  line-height: $land_contacts_height;
+  position: relative;
+}
+
+.land_cont_img_mail {
+  position: absolute;
+  width: $land_contacts_img_width;
+  right: 0;
+}
+
+.land_cont_img_vk {
+  position: absolute;
+  width: $land_contacts_img_width;
+  left: 0;
+}
+
+.land_cont_title_mail {
+  position: absolute;
+  right: $land_contacts_title_offset;
+}
+
+.land_cont_title_vk {
+  position: absolute;
+  left: $land_contacts_title_offset;
+}
+
+.land_cont_inner_vk {
+  right: $land_cont_space;
+}
+
+.land_cont_inner_mail {
+  left: $land_cont_space;
+}

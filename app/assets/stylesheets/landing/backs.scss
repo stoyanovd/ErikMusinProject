@@ -43,5 +43,5 @@
 ///////////////////////////////////////////////////////////////////////////////////
 
 .land_contacts {
-  @include background(url("landing/vector-contacts/Jerry.png") $dark_color center center / cover no-repeat);
+    @include background(url("landing/vector-contacts/Jerry.png") $dark_color center center / cover no-repeat);
 }

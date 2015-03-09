@@ -12,43 +12,61 @@
 <body class="contacts_full_back">
 
 <%= render file: "landing/menu" %>
+<div class="main_part_top_margin w_full page-wrap">
+    <div style="padding-top: 300px;">
+        <!--<div class="half">-->
+            <!--<div class="pull_right " style=" margin-right: 30px; ">-->
 
-<div class="main_part_top_margin w_full">
+                <!--<a href="mailto:erikmusin@gmail.com">-->
+                    <!--<%= image_tag "landing/vector-contacts/mail.svg", {class: "contact_link_image", style: "height:30px;"} %>-->
+                <!--</a>-->
+            <!--</div>-->
+        <!--</div>-->
 
-    <div class="container_full_contacts erik_font">
+        <!--<div class="half" style="">-->
 
-        <div class="half_down" style="margin-top: -30px;">
+            <!--<div class="pull_left " style="margin-left: 30px; ">-->
+                <!--<%= link_to "http://vk.com/erik_musin" do %>-->
+                    <!--<%= image_tag "landing/vector-contacts/vk.svg", {class: "contact_link_image", style: "height:30px;"} %>-->
+                <!--<% end %>-->
+            <!--</div>-->
 
-            <div class="half" style="">
-                <div class="pull_right " style=" margin-right: 30px; ">
+        <!--</div>-->
 
-                    <a href="mailto:erikmusin@gmail.com">
-                        <%= image_tag "landing/vector-contacts/mail.svg", {class: "contact_link_image", style: "height:30px;"} %>
-                    </a>
-                </div>
+        <div class="container_last light_color_font">
+
+            <div class="half_pack over_hidden">
+                <a href="mailto:erikmusin@gmail.com" class="mail_to_animate land_cont_title_mail contact_link_style" style="">
+                    erikmusin@gmail.com
+                </a>
+
+                <a href="mailto:erikmusin@gmail.com" class="h160 jerry_back  land_cont_img_mail" style="">
+                    <%= image_tag "landing/vector-contacts/mail.svg", {class: "contact_link_image h30  pos_abs half_down land_cont_inner_mail", style: ""} %>
+                </a>
             </div>
 
-            <div class="half" style="">
-
-                <div class="pull_left " style="margin-left: 30px; ">
-                    <%= link_to "http://vk.com/erik_musin" do %>
-                        <%= image_tag "landing/vector-contacts/vk.svg", {class: "contact_link_image", style: "height:30px;"} %>
-                    <% end %>
-                </div>
-
+            <div class="half_pack over_hidden">
+                <%= link_to("http://vk.com/erik_musin", {class: "vk_to_animate  land_cont_title_vk contact_link_style", style: ""}) do %>
+                    http://vk.com/erik_musin
+                <% end %>
+                <%= link_to("http://vk.com/erik_musin", {class: "h160 jerry_back  land_cont_img_vk", style: ""}) do %>
+                    <%= image_tag "landing/vector-contacts/vk.svg", {class: "contact_link_image h30  pos_abs half_down land_cont_inner_vk", style: ""} %>
+                <% end %>
             </div>
         </div>
+
+
+        <style>
+            .triangle_contacts {
+                visibility: visible;
+            }
+        </style>
+
     </div>
-
-    <style>
-        .triangle_contacts {
-            visibility: visible;
-        }
-    </style>
-
 </div>
-
-<div class="jerry_footer"></div>
+<footer>
+    <%= image_tag "landing/vector-contacts/Jerry_cut.png", class: "" %>
+</footer>
 </body>
 
 </html>

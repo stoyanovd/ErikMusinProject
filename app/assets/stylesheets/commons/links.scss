@@ -10,6 +10,7 @@
 
 .contact_link_image {
 }
+
 .contact_link_image:hover {
   opacity: 0.5;
 }
@@ -33,6 +34,28 @@
 .erik_font {
   a {
     @extend .plain_link;
+  }
+}
+
+.fix_opacity {
+  a:hover {
+    opacity: 1;
+  }
+}
+
+.light_color_font {
+  color: $light_color;
+  a:link {
+    color: $light_color;
+  }
+  a:visited {
+    color: $light_color;
+  }
+  a:hover {
+    color: $light_color;
+  }
+  a:active {
+    color: $light_color;
   }
 }
 
