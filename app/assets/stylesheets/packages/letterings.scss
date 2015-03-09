@@ -3,5 +3,9 @@
   margin-left: 40px;
   margin-bottom: 30px;
   width: 250px;
+  height: 250px;
   text-align: left;
+
+  @include background(url(load.gif) center center / auto no-repeat);
+
 }
