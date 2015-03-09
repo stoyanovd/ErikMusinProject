@@ -30,7 +30,7 @@
 }
 
 .vk_animation {
-  @include animation(right_move 0.7s ease-in, appear 1s ease);
+  @include animation(right_move 0.7s, appear 1s ease);
 }
 
 .mail_to_animate {
