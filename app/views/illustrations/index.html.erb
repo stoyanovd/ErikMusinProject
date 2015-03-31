@@ -1,10 +1,18 @@
-<div class = "erik_font">
-<% @pckgs.each do |pack| %>
-    <%= link_to("illustrations/extra/" + pack) do %>
-        <%= image_tag "pngs/illustration/" + pack + "/preview.png", class: "illustrations_inner" %>
+<div class="">
+    <% @pckgs.each do |pack| %>
+        <%= link_to("illustrations/extra/" + pack, class: "letterings_inner") do %>
+            <%= image_tag "pngs/illustration/"+ pack+ "/preview.png", class: "letterings_inner_image" %>
+            <div class="letterings_inner_text hidden">
+                <% r_ind = pack.rindex('.') %>
+                <% if r_ind != nil %>
+                    <% pack = pack[0..r_ind - 1] %>
+                <% end %>
+                <%= pack %>
+            </div>
+        <% end %>
     <% end %>
-<% end %>
 </div>
+
 
 <style>
     .triangle_illustration {

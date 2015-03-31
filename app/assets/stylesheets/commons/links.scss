@@ -1,11 +1,27 @@
-
-.contact_link_style {
+.erik_link_shadowed {
   text-decoration: none;
   @extend .erik_font;
 }
 
-.contact_link_style:hover {
+.erik_link_shadowed:link {
+  text-decoration: none;
+  @extend .erik_font;
+}
+
+.erik_link_shadowed:visited {
+  text-decoration: none;
+  @extend .erik_font;
+}
+
+.erik_link_shadowed:hover {
   opacity: 0.5;
+  text-decoration: none;
+  @extend .erik_font;
+}
+
+.erik_link_shadowed:active {
+  text-decoration: none;
+  @extend .erik_font;
 }
 
 .contact_link_image {
@@ -15,26 +31,53 @@
   opacity: 0.5;
 }
 
-.plain_link:link {
-  @extend .contact_link_style;
+.erik_link_no_shadow:link {
+  text-decoration: none;
+  @extend .erik_font;
 }
 
-.plain_link:visited {
-  @extend .contact_link_style;
+.erik_link_no_shadow:visited {
+  text-decoration: none;
+  @extend .erik_font;
 }
 
-.plain_link:hover {
-  @extend .contact_link_style;
+.erik_link_no_shadow:hover {
+  text-decoration: none;
+  @extend .erik_font;
 }
 
-.plain_link:active {
-  @extend .contact_link_style;
+.erik_link_no_shadow:active {
+  text-decoration: none;
+  @extend .erik_font;
 }
 
-.erik_font {
-  a {
-    @extend .plain_link;
-  }
+.art_name_link, .art_name_link:link, .art_name_link:visited, .art_name_link:hover, .art_name_link:active {
+  @extend .erik_font;
+  @extend .bold;
+  text-decoration: none;
+  color: $dark_color;
+}
+
+.art_name_shadow_link, .art_name_shadow_link:link, .art_name_shadow_link:visited {
+  @extend .erik_font;
+  @extend .bold;
+  text-decoration: none;
+  color: $dark_color;
+}
+
+.art_name_shadow_link:hover {
+  @extend .erik_font;
+  @extend .bold;
+  opacity: 0.5;
+  text-decoration: none;
+  color: $dark_color;
+}
+
+.art_name_shadow_link:active {
+  @extend .erik_font;
+  @extend .bold;
+  text-decoration: none;
+  color: $dark_color;
 }
 
 .fix_opacity {

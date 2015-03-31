@@ -1,19 +1,28 @@
+$link_illustration_color: #F9AF43;
+$link_logo_color: #F05454;
+$link_lettering_color: #F2F2F2;
+$link_contact_color: #16AEAA;
+$link_about_color: #D6DF23;
+
+$jerry_background_color: #1F5D61;
+
+
 .color_link_illustration {
-  color: #F9AF43;
+  color: $link_illustration_color;
 }
 
 .color_link_logo {
-  color: #F05454;
+  color: $link_logo_color;
 }
 
 .color_link_lettering {
-  color: #F2F2F2;
+  color: $link_lettering_color;
 }
 
 .color_link_contact {
-  color: #16AEAA  ;
+  color: $link_contact_color;
 }
 
 .color_link_about {
-  color: #D6DF23;
+  color: $link_about_color;
 }

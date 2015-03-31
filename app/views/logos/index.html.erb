@@ -1,8 +1,15 @@
-<div class="">
-    <% @logos.each do |logo| %>
-        <%= image_tag "pngs/logo/" + logo, class: "logos_inner" %>
-    <% end %>
-</div>
+<% @logos.each do |logo| %>
+    <div class="letterings_inner">
+        <%= image_tag "pngs/logo/"+ logo, class: "letterings_inner_image" %>
+        <div class="letterings_inner_text hidden">
+            <% r_ind = logo.rindex('.') %>
+            <% if r_ind != nil %>
+                <% logo = logo[0..r_ind - 1] %>
+            <% end %>
+            <%= logo %>
+        </div>
+    </div>
+<% end %>
 
 <style>
     .triangle_logo {

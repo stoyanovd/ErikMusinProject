@@ -1,11 +1,32 @@
+$lettering_inner_width: 250px;
+$lettering_inner_text_height: 12px;
+
 .letterings_inner {
   display: inline-block;
-  margin-left: 40px;
-  margin-bottom: 30px;
-  width: 250px;
-  height: 250px;
-  text-align: left;
+  margin-left: 45px;
+  margin-bottom: 10px;
+  width: $lettering_inner_width;
+  height: $lettering_inner_width + 2 * $lettering_inner_text_height;
+  text-align: center;
+
+  @extend .art_name_link;
+}
+//
+//.letterings_inner:link, .letterings_inner:visited, .letterings_inner:hover, .letterings_inner:active {
+//  @extend .art_name_link;
+//}
+
+.letterings_inner_image {
+
+  width: $lettering_inner_width;
+  height: $lettering_inner_width;
 
   @include background(url(load.gif) center center / auto no-repeat);
+}
 
+.letterings_inner_text {
+  @extend .art_name_shadow_link;
+
+  width: $lettering_inner_width;
+  text-align: center;
 }

@@ -1,5 +1,11 @@
 $footer_height:150px;
 
+$footer_before_icons_padding: 30px;
+$footer_icons_height: 27px;
+$footer_icons_container_height: $footer_before_icons_padding * 2 + $footer_icons_height;
+
+$footer_text_container_height:$footer_height - $footer_icons_container_height;
+
 // 27px; icon size
 
 .footer {
@@ -9,5 +15,13 @@ $footer_height:150px;
 }
 
 .footer_inner_container {
-  height: 95px;
+  height: $footer_icons_container_height
+}
+
+.footer_icons_padding {
+  padding-top: $footer_before_icons_padding;
+  
+}
+.footer_text_container{
+  height: $footer_text_container_height;
 }
