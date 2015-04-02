@@ -7,8 +7,8 @@ class LetteringsController < ApplicationController
   include ApplicationHelper
 
   def index
-    @letterings_1 = get_dir_entries("app/assets/images/pngs/Lettering/pc")
-    @letterings_2 = get_dir_entries("app/assets/images/pngs/Lettering/hand")
+    @letterings = ArtLettering.order('show_index')
+    @letterings.reverse_order!
   end
 
   # GET /letterings/1

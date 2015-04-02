@@ -1,22 +1,11 @@
-<% arrs = [@letterings_1, @letterings_2] %>
-<% paths = ["pc", "hand"] %>
-<div class = "">
-
-    <% for i in 0..1 do %>
-        <% arrs[i].each do |lettering| %>
-            <div class="letterings_inner">
-                <%= image_tag "pngs/Lettering/" + paths[i] + "/" + lettering, class: "letterings_inner_image" %>
-                <div class="letterings_inner_text hidden">
-                    <% r_ind = lettering.rindex('.') %>
-                    <% if r_ind != nil %>
-                        <% lettering = lettering[0..r_ind - 1] %>
-                    <% end %>
-                    <%= lettering %>
-                </div>
-            </div>
-        <% end %>
-    <% end %>
-</div>
+<% @letterings.each do |lettering| %>
+    <div class="letterings_inner">
+        <%= image_tag lettering.image, class: "letterings_inner_image" %>
+        <div class="letterings_inner_text hidden">
+            <%= lettering.name %>
+        </div>
+    </div>
+<% end %>
 
 <style>
     .triangle_lettering {
