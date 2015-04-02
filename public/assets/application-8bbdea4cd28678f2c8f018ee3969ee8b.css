@@ -1,0 +1,1052 @@
+/* line 1, /amy/Infa/Ruby_progs/ErikMusinProject/app/assets/stylesheets/commons/before_all.scss */
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+
+/* line 7, /amy/Infa/Ruby_progs/ErikMusinProject/app/assets/stylesheets/commons/before_all.scss */
+html, body {
+  height: 100%;
+}
+
+/* line 2, /amy/Infa/Ruby_progs/ErikMusinProject/app/assets/stylesheets/commons/containers.scss */
+.container, .container_common, .container_first, .container_last, .container_about, .container_full_contacts, .container_huge {
+  width: 100%;
+  position: relative;
+}
+
+/* line 7, /amy/Infa/Ruby_progs/ErikMusinProject/app/assets/stylesheets/commons/containers.scss */
+.container_common {
+  height: 550px;
+}
+
+/* line 12, /amy/Infa/Ruby_progs/ErikMusinProject/app/assets/stylesheets/commons/containers.scss */
+.container_first {
+  height: 800px;
+}
+
+/* line 17, /amy/Infa/Ruby_progs/ErikMusinProject/app/assets/stylesheets/commons/containers.scss */
+.container_last {
+  height: 160px;
+}
+
+/* line 22, /amy/Infa/Ruby_progs/ErikMusinProject/app/assets/stylesheets/commons/containers.scss */
+.container_about {
+  height: 1000px;
+}
+
+/* line 27, /amy/Infa/Ruby_progs/ErikMusinProject/app/assets/stylesheets/commons/containers.scss */
+.container_full_contacts {
+  height: 500px;
+}
+
+/* line 32, /amy/Infa/Ruby_progs/ErikMusinProject/app/assets/stylesheets/commons/containers.scss */
+.container_huge {
+  height: 1300px;
+}
+
+/* line 37, /amy/Infa/Ruby_progs/ErikMusinProject/app/assets/stylesheets/commons/containers.scss */
+.light_back {
+  background-color: #fffbf2;
+}
+
+@font-face {
+  font-family: "718light";
+  font-weight: normal;
+  font-style: normal;
+  src: url("718/common/SevenOneEight-Light-webfont.eot");
+  src: url("718/common/SevenOneEight-Light-webfont.eot?#iefix") format("embedded-opentype"), url("718/common/SevenOneEight-Light-webfont.woff") format("woff"), url("718/common/SevenOneEight-Light-webfont.ttf") format("truetype"), url("718/common/SevenOneEight-Light-webfont.svg#718light") format("svg");
+}
+
+@font-face {
+  font-family: "718light Bold";
+  font-weight: normal;
+  font-style: normal;
+  src: url("718/common/SevenOneEight-Bold-webfont.eot");
+  src: url("718/common/SevenOneEight-Bold-webfont.eot?#iefix") format("embedded-opentype"), url("718/common/SevenOneEight-Bold-webfont.woff") format("woff"), url("718/common/SevenOneEight-Bold-webfont.ttf") format("truetype"), url("718/common/SevenOneEight-Bold-webfont.svg#718light Bold") format("svg");
+}
+
+/* line 5, /amy/Infa/Ruby_progs/ErikMusinProject/app/assets/stylesheets/commons/fonts.scss */
+.erik_font, .contact_link_style, .plain_link:link, .erik_font a:link, .plain_link:visited, .erik_font a:visited, .plain_link:hover, .erik_font a:hover, .plain_link:active, .erik_font a:active {
+  font-family: '718light', sans-serif;
+}
+
+/* line 9, /amy/Infa/Ruby_progs/ErikMusinProject/app/assets/stylesheets/commons/fonts.scss */
+.about_plain_font, .lang_field {
+  font-family: Helvetica, sans-serif;
+}
+
+/* line 13, /amy/Infa/Ruby_progs/ErikMusinProject/app/assets/stylesheets/commons/fonts.scss */
+.bold, .circle_button {
+  font-weight: bold;
+}
+
+/* line 17, /amy/Infa/Ruby_progs/ErikMusinProject/app/assets/stylesheets/commons/fonts.scss */
+.font36 {
+  font-size: 36px;
+}
+
+/* line 21, /amy/Infa/Ruby_progs/ErikMusinProject/app/assets/stylesheets/commons/fonts.scss */
+.font25 {
+  font-size: 25px;
+}
+
+/* line 25, /amy/Infa/Ruby_progs/ErikMusinProject/app/assets/stylesheets/commons/fonts.scss */
+.gray_font {
+  color: #808284;
+}
+
+/* line 2, /amy/Infa/Ruby_progs/ErikMusinProject/app/assets/stylesheets/commons/links.scss */
+.contact_link_style, .plain_link:link, .erik_font a:link, .contact_link_style a:link, .plain_link:visited, .erik_font a:visited, .contact_link_style a:visited, .plain_link:hover, .erik_font a:hover, .contact_link_style a:hover, .plain_link:active, .erik_font a:active, .contact_link_style a:active {
+  text-decoration: none;
+}
+
+/* line 7, /amy/Infa/Ruby_progs/ErikMusinProject/app/assets/stylesheets/commons/links.scss */
+.contact_link_style:hover, .plain_link:hover, .erik_font a:hover, .contact_link_style a:hover {
+  opacity: 0.5;
+}
+
+/* line 14, /amy/Infa/Ruby_progs/ErikMusinProject/app/assets/stylesheets/commons/links.scss */
+.contact_link_image:hover {
+  opacity: 0.5;
+}
+
+/* line 41, /amy/Infa/Ruby_progs/ErikMusinProject/app/assets/stylesheets/commons/links.scss */
+.fix_opacity a:hover {
+  opacity: 1;
+}
+
+/* line 46, /amy/Infa/Ruby_progs/ErikMusinProject/app/assets/stylesheets/commons/links.scss */
+.light_color_font {
+  color: #fffbf2;
+}
+/* line 48, /amy/Infa/Ruby_progs/ErikMusinProject/app/assets/stylesheets/commons/links.scss */
+.light_color_font a:link {
+  color: #fffbf2;
+}
+/* line 51, /amy/Infa/Ruby_progs/ErikMusinProject/app/assets/stylesheets/commons/links.scss */
+.light_color_font a:visited {
+  color: #fffbf2;
+}
+/* line 54, /amy/Infa/Ruby_progs/ErikMusinProject/app/assets/stylesheets/commons/links.scss */
+.light_color_font a:hover {
+  color: #fffbf2;
+}
+/* line 57, /amy/Infa/Ruby_progs/ErikMusinProject/app/assets/stylesheets/commons/links.scss */
+.light_color_font a:active {
+  color: #fffbf2;
+}
+
+/* line 1, /amy/Infa/Ruby_progs/ErikMusinProject/app/assets/stylesheets/commons/others.scss */
+.half, .half_pack {
+  float: left;
+  width: 50%;
+}
+
+/* line 6, /amy/Infa/Ruby_progs/ErikMusinProject/app/assets/stylesheets/commons/others.scss */
+.single_on_line {
+  clear: both;
+}
+
+/* line 10, /amy/Infa/Ruby_progs/ErikMusinProject/app/assets/stylesheets/commons/others.scss */
+.hidden {
+  visibility: hidden;
+}
+
+/* line 14, /amy/Infa/Ruby_progs/ErikMusinProject/app/assets/stylesheets/commons/others.scss */
+.hidden_down {
+  visibility: hidden;
+  height: 0px;
+}
+
+/*
+.image_helper {
+  @include display(inline_block);
+  height: 100%;
+  vertical-align: middle;
+}
+*/
+/* line 27, /amy/Infa/Ruby_progs/ErikMusinProject/app/assets/stylesheets/commons/others.scss */
+.between_space {
+  height: 10px;
+}
+
+/* line 1, /amy/Infa/Ruby_progs/ErikMusinProject/app/assets/stylesheets/commons/parts.scss */
+.one_third {
+  width: 26%;
+  margin: 30px;
+}
+
+/* line 6, /amy/Infa/Ruby_progs/ErikMusinProject/app/assets/stylesheets/commons/parts.scss */
+.one_true_third {
+  width: 33%;
+}
+
+/* line 10, /amy/Infa/Ruby_progs/ErikMusinProject/app/assets/stylesheets/commons/parts.scss */
+.two_true_third {
+  width: 66%;
+}
+
+/* line 1, /amy/Infa/Ruby_progs/ErikMusinProject/app/assets/stylesheets/commons/positions.scss */
+.half_right {
+  -webkit-transform: translate(50%, 0);
+  -moz-transform: translate(50%, 0);
+  -ms-transform: translate(50%, 0);
+  -o-transform: translate(50%, 0);
+  transform: translate(50%, 0);
+}
+
+/* line 5, /amy/Infa/Ruby_progs/ErikMusinProject/app/assets/stylesheets/commons/positions.scss */
+.half_down {
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+/* line 10, /amy/Infa/Ruby_progs/ErikMusinProject/app/assets/stylesheets/commons/positions.scss */
+.pull_left {
+  float: left;
+}
+
+/* line 14, /amy/Infa/Ruby_progs/ErikMusinProject/app/assets/stylesheets/commons/positions.scss */
+.pull_right {
+  float: right;
+}
+
+/* line 18, /amy/Infa/Ruby_progs/ErikMusinProject/app/assets/stylesheets/commons/positions.scss */
+.justify_all_between {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -moz-box-pack: justify;
+  box-pack: justify;
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  -ms-justify-content: space-between;
+  -o-justify-content: space-between;
+  justify-content: space-between;
+  -ms-flex-pack: justify;
+}
+
+/* line 23, /amy/Infa/Ruby_progs/ErikMusinProject/app/assets/stylesheets/commons/positions.scss */
+.justify_all_around {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  box-pack: center;
+  -webkit-justify-content: space-around;
+  -moz-justify-content: space-around;
+  -ms-justify-content: space-around;
+  -o-justify-content: space-around;
+  justify-content: space-around;
+  -ms-flex-pack: center;
+}
+
+/* line 28, /amy/Infa/Ruby_progs/ErikMusinProject/app/assets/stylesheets/commons/positions.scss */
+.align_center {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-content: center;
+  -moz-align-content: center;
+  align-content: center;
+  -ms-flex-line-pack: center;
+}
+
+/* line 33, /amy/Infa/Ruby_progs/ErikMusinProject/app/assets/stylesheets/commons/positions.scss */
+.center_img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+/* line 41, /amy/Infa/Ruby_progs/ErikMusinProject/app/assets/stylesheets/commons/positions.scss */
+.pos_rel {
+  position: relative;
+}
+
+/* line 45, /amy/Infa/Ruby_progs/ErikMusinProject/app/assets/stylesheets/commons/positions.scss */
+.pos_abs {
+  position: absolute;
+}
+
+/* line 49, /amy/Infa/Ruby_progs/ErikMusinProject/app/assets/stylesheets/commons/positions.scss */
+.disp_flex {
+  display: flex;
+}
+
+/* line 53, /amy/Infa/Ruby_progs/ErikMusinProject/app/assets/stylesheets/commons/positions.scss */
+.over_hidden {
+  overflow: hidden;
+}
+
+/* line 57, /amy/Infa/Ruby_progs/ErikMusinProject/app/assets/stylesheets/commons/positions.scss */
+.vert_align_mid {
+  vertical-align: middle;
+}
+
+/* line 1, /amy/Infa/Ruby_progs/ErikMusinProject/app/assets/stylesheets/landing/backs.scss */
+.landing_main {
+  background-color: #181d20;
+}
+
+/* line 7, /amy/Infa/Ruby_progs/ErikMusinProject/app/assets/stylesheets/landing/backs.scss */
+.land_illustration {
+  background: url("landing/illustration/illustration_background.svg") #181d20 center center/cover no-repeat;
+  background: url("landing/illustration/illustration_background.svg") #181d20 center center/cover no-repeat;
+}
+
+/* line 11, /amy/Infa/Ruby_progs/ErikMusinProject/app/assets/stylesheets/landing/backs.scss */
+.opacity_illustration {
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("landing/illustration/illustration_background.svg") #181d20 center center/cover no-repeat;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("landing/illustration/illustration_background.svg") #181d20 center center/cover no-repeat;
+}
+
+/* line 19, /amy/Infa/Ruby_progs/ErikMusinProject/app/assets/stylesheets/landing/backs.scss */
+.land_word_logo {
+  background: url("landing/logo/logo.svg") #fffbf2 center center/cover no-repeat;
+  background: url("landing/logo/logo.svg") #fffbf2 center center/cover no-repeat;
+}
+
+/* line 25, /amy/Infa/Ruby_progs/ErikMusinProject/app/assets/stylesheets/landing/backs.scss */
+.land_logo {
+  background-color: #fffbf2;
+}
+
+/* line 28, /amy/Infa/Ruby_progs/ErikMusinProject/app/assets/stylesheets/landing/backs.scss */
+.opacity_logo {
+  opacity: 0.7;
+}
+
+/* line 34, /amy/Infa/Ruby_progs/ErikMusinProject/app/assets/stylesheets/landing/backs.scss */
+.land_lettering {
+  background: url("landing/lettering/lettering_background.svg") #fffbf2 center/cover no-repeat;
+  background: url("landing/lettering/lettering_background.svg") #fffbf2 center/cover no-repeat;
+}
+
+/* line 38, /amy/Infa/Ruby_progs/ErikMusinProject/app/assets/stylesheets/landing/backs.scss */
+.opacity_lettering {
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("landing/lettering/lettering_background.svg") #181d20 center center/cover no-repeat;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("landing/lettering/lettering_background.svg") #181d20 center center/cover no-repeat;
+}
+
+/* line 45, /amy/Infa/Ruby_progs/ErikMusinProject/app/assets/stylesheets/landing/backs.scss */
+.land_contacts {
+  background: url("landing/vector-contacts/Jerry.png") #181d20 center center/cover no-repeat;
+  background: url("landing/vector-contacts/Jerry.png") #181d20 center center/cover no-repeat;
+}
+
+/* line 1, /amy/Infa/Ruby_progs/ErikMusinProject/app/assets/stylesheets/landing/icon_links.scss */
+.w_icon {
+  width: 27px;
+  height: 27px;
+  display: block;
+  background-size: cover;
+}
+
+/* line 8, /amy/Infa/Ruby_progs/ErikMusinProject/app/assets/stylesheets/landing/icon_links.scss */
+.dribble_icon {
+  background-image: url("landing/first_page_white/dribbble.svg");
+  background-image: url("landing/first_page_white/dribbble.svg");
+}
+
+/* line 12, /amy/Infa/Ruby_progs/ErikMusinProject/app/assets/stylesheets/landing/icon_links.scss */
+.dribble_icon:hover {
+  background-image: url("landing/first_page/dribbble.svg");
+  background-image: url("landing/first_page/dribbble.svg");
+}
+
+/* line 16, /amy/Infa/Ruby_progs/ErikMusinProject/app/assets/stylesheets/landing/icon_links.scss */
+.behance_icon {
+  background-image: url("landing/first_page_white/Behance.svg");
+  background-image: url("landing/first_page_white/Behance.svg");
+}
+
+/* line 20, /amy/Infa/Ruby_progs/ErikMusinProject/app/assets/stylesheets/landing/icon_links.scss */
+.behance_icon:hover {
+  background-image: url("landing/first_page/Behance.svg");
+  background-image: url("landing/first_page/Behance.svg");
+}
+
+/* line 24, /amy/Infa/Ruby_progs/ErikMusinProject/app/assets/stylesheets/landing/icon_links.scss */
+.vk_icon {
+  background-image: url("landing/first_page_white/VK.svg");
+  background-image: url("landing/first_page_white/VK.svg");
+}
+
+/* line 28, /amy/Infa/Ruby_progs/ErikMusinProject/app/assets/stylesheets/landing/icon_links.scss */
+.vk_icon:hover {
+  background-image: url("landing/first_page/VK.svg");
+  background-image: url("landing/first_page/VK.svg");
+}
+
+/* line 32, /amy/Infa/Ruby_progs/ErikMusinProject/app/assets/stylesheets/landing/icon_links.scss */
+.insta_icon {
+  background-image: url("landing/first_page_white/Instagramm.svg");
+  background-image: url("landing/first_page_white/Instagramm.svg");
+}
+
+/* line 36, /amy/Infa/Ruby_progs/ErikMusinProject/app/assets/stylesheets/landing/icon_links.scss */
+.insta_icon:hover {
+  background-image: url("landing/first_page/Instagram.svg");
+  background-image: url("landing/first_page/Instagram.svg");
+}
+
+/* line 1, /amy/Infa/Ruby_progs/ErikMusinProject/app/assets/stylesheets/menu/color_links.scss */
+.color_link_illustration {
+  color: #F9AF43;
+}
+
+/* line 5, /amy/Infa/Ruby_progs/ErikMusinProject/app/assets/stylesheets/menu/color_links.scss */
+.color_link_logo {
+  color: #F05454;
+}
+
+/* line 9, /amy/Infa/Ruby_progs/ErikMusinProject/app/assets/stylesheets/menu/color_links.scss */
+.color_link_lettering {
+  color: #F2F2F2;
+}
+
+/* line 13, /amy/Infa/Ruby_progs/ErikMusinProject/app/assets/stylesheets/menu/color_links.scss */
+.color_link_contact {
+  color: #16aeaa;
+}
+
+/* line 17, /amy/Infa/Ruby_progs/ErikMusinProject/app/assets/stylesheets/menu/color_links.scss */
+.color_link_about {
+  color: #D6DF23;
+}
+
+/* line 3, /amy/Infa/Ruby_progs/ErikMusinProject/app/assets/stylesheets/menu/panel.scss */
+.menu_erik {
+  height: 50px;
+  margin-top: 30px;
+}
+
+/* line 8, /amy/Infa/Ruby_progs/ErikMusinProject/app/assets/stylesheets/menu/panel.scss */
+.menu {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 110px;
+  line-height: 110px;
+  background-color: #181d20;
+  z-index: 1500;
+}
+
+/* line 18, /amy/Infa/Ruby_progs/ErikMusinProject/app/assets/stylesheets/menu/panel.scss */
+.menu_inner_container {
+  width: 1520px;
+  height: 110px;
+}
+
+/* line 23, /amy/Infa/Ruby_progs/ErikMusinProject/app/assets/stylesheets/menu/panel.scss */
+.main_part_top_padding {
+  margin-top: 135px;
+}
+
+/* line 3, /amy/Infa/Ruby_progs/ErikMusinProject/app/assets/stylesheets/menu/triangle.scss */
+.triangle_menu {
+  top: 110px;
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-top: 15px solid #181d20;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 15, /amy/Infa/Ruby_progs/ErikMusinProject/app/assets/stylesheets/menu/triangle.scss */
+.triangle_illustration {
+  visibility: hidden;
+}
+
+/* line 19, /amy/Infa/Ruby_progs/ErikMusinProject/app/assets/stylesheets/menu/triangle.scss */
+.triangle_logo {
+  visibility: hidden;
+}
+
+/* line 23, /amy/Infa/Ruby_progs/ErikMusinProject/app/assets/stylesheets/menu/triangle.scss */
+.triangle_lettering {
+  visibility: hidden;
+}
+
+/* line 27, /amy/Infa/Ruby_progs/ErikMusinProject/app/assets/stylesheets/menu/triangle.scss */
+.triangle_contacts {
+  visibility: hidden;
+}
+
+/* line 31, /amy/Infa/Ruby_progs/ErikMusinProject/app/assets/stylesheets/menu/triangle.scss */
+.triangle_about {
+  visibility: hidden;
+}
+
+/* line 5, /amy/Infa/Ruby_progs/ErikMusinProject/app/assets/stylesheets/menu/footer/general.scss */
+.footer {
+  height: 150px;
+  background-color: #181d20;
+  width: 100%;
+}
+
+/* line 11, /amy/Infa/Ruby_progs/ErikMusinProject/app/assets/stylesheets/menu/footer/general.scss */
+.footer_inner_container {
+  height: 95px;
+}
+
+/* line 2, /amy/Infa/Ruby_progs/ErikMusinProject/app/assets/stylesheets/menu/footer/icons.scss */
+.footer_dribble_icon {
+  background-image: url("landing/first_page_white/dribbble.svg");
+  background-image: url("landing/first_page_white/dribbble.svg");
+}
+
+/* line 6, /amy/Infa/Ruby_progs/ErikMusinProject/app/assets/stylesheets/menu/footer/icons.scss */
+.footer_dribble_icon:hover {
+  background-image: url("landing/footer_icons/dribbble-white.svg");
+  background-image: url("landing/footer_icons/dribbble-white.svg");
+}
+
+/* line 10, /amy/Infa/Ruby_progs/ErikMusinProject/app/assets/stylesheets/menu/footer/icons.scss */
+.footer_behance_icon {
+  background-image: url("landing/first_page_white/Behance.svg");
+  background-image: url("landing/first_page_white/Behance.svg");
+}
+
+/* line 14, /amy/Infa/Ruby_progs/ErikMusinProject/app/assets/stylesheets/menu/footer/icons.scss */
+.footer_behance_icon:hover {
+  background-image: url("landing/footer_icons/Behance-white.svg");
+  background-image: url("landing/footer_icons/Behance-white.svg");
+}
+
+/* line 18, /amy/Infa/Ruby_progs/ErikMusinProject/app/assets/stylesheets/menu/footer/icons.scss */
+.footer_vk_icon {
+  background-image: url("landing/first_page_white/VK.svg");
+  background-image: url("landing/first_page_white/VK.svg");
+}
+
+/* line 22, /amy/Infa/Ruby_progs/ErikMusinProject/app/assets/stylesheets/menu/footer/icons.scss */
+.footer_vk_icon:hover {
+  background-image: url("landing/footer_icons/VK-white.svg");
+  background-image: url("landing/footer_icons/VK-white.svg");
+}
+
+/* line 26, /amy/Infa/Ruby_progs/ErikMusinProject/app/assets/stylesheets/menu/footer/icons.scss */
+.footer_insta_icon {
+  background-image: url("landing/first_page_white/Instagramm.svg");
+  background-image: url("landing/first_page_white/Instagramm.svg");
+}
+
+/* line 30, /amy/Infa/Ruby_progs/ErikMusinProject/app/assets/stylesheets/menu/footer/icons.scss */
+.footer_insta_icon:hover {
+  background-image: url("landing/footer_icons/Instagramm-white.svg");
+  background-image: url("landing/footer_icons/Instagramm-white.svg");
+}
+
+/* line 34, /amy/Infa/Ruby_progs/ErikMusinProject/app/assets/stylesheets/menu/footer/icons.scss */
+.footer_mail_icon {
+  background-image: url("landing/footer_icons/mail.svg");
+  background-image: url("landing/footer_icons/mail.svg");
+}
+
+/* line 37, /amy/Infa/Ruby_progs/ErikMusinProject/app/assets/stylesheets/menu/footer/icons.scss */
+.footer_mail_icon:hover {
+  background-image: url("landing/footer_icons/mail-green.svg");
+  background-image: url("landing/footer_icons/mail-green.svg");
+}
+
+/* line 5, /amy/Infa/Ruby_progs/ErikMusinProject/app/assets/stylesheets/packages/about/about.scss */
+.about_item {
+  width: 350px;
+  position: relative;
+}
+
+/* line 10, /amy/Infa/Ruby_progs/ErikMusinProject/app/assets/stylesheets/packages/about/about.scss */
+.about_image {
+  width: 150px;
+  height: 150px;
+  margin-left: 100px;
+  background-size: cover;
+}
+
+/* line 18, /amy/Infa/Ruby_progs/ErikMusinProject/app/assets/stylesheets/packages/about/about.scss */
+.about_text_column {
+  text-align: justify;
+  margin-top: 30px;
+}
+
+/* line 22, /amy/Infa/Ruby_progs/ErikMusinProject/app/assets/stylesheets/packages/about/about.scss */
+.about_text_column_small {
+  text-align: justify;
+  margin-top: 30px;
+  width: 200px;
+  margin-left: 75px;
+}
+
+/* line 29, /amy/Infa/Ruby_progs/ErikMusinProject/app/assets/stylesheets/packages/about/about.scss */
+.lang_field {
+  position: absolute;
+}
+
+/* line 3, /amy/Infa/Ruby_progs/ErikMusinProject/app/assets/stylesheets/packages/about/circle.scss */
+.circle_button {
+  width: 55px;
+  height: 55px;
+  background-color: #d2d2d2;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  text-align: center;
+  line-height: 55px;
+  color: #ffffff;
+}
+
+/* line 22, /amy/Infa/Ruby_progs/ErikMusinProject/app/assets/stylesheets/packages/about/circle.scss */
+.circles_panel {
+  width: 170px;
+}
+
+/* line 26, /amy/Infa/Ruby_progs/ErikMusinProject/app/assets/stylesheets/packages/about/circle.scss */
+.circle_pressed {
+  background-color: #d6df23;
+}
+
+/* line 2, /amy/Infa/Ruby_progs/ErikMusinProject/app/assets/stylesheets/packages/about/icon_links.scss */
+.man_icon {
+  background-image: url("landing/about/man.svg");
+  background-image: url("landing/about/man.svg");
+}
+
+/* line 6, /amy/Infa/Ruby_progs/ErikMusinProject/app/assets/stylesheets/packages/about/icon_links.scss */
+.man_icon:hover {
+  background-image: url("landing/about-green/man.svg");
+  background-image: url("landing/about-green/man.svg");
+}
+
+/* line 9, /amy/Infa/Ruby_progs/ErikMusinProject/app/assets/stylesheets/packages/about/icon_links.scss */
+.hat_icon {
+  background-image: url("landing/about/hat.svg");
+  background-image: url("landing/about/hat.svg");
+}
+
+/* line 13, /amy/Infa/Ruby_progs/ErikMusinProject/app/assets/stylesheets/packages/about/icon_links.scss */
+.hat_icon:hover {
+  background-image: url("landing/about-green/hat.svg");
+  background-image: url("landing/about-green/hat.svg");
+}
+
+/* line 16, /amy/Infa/Ruby_progs/ErikMusinProject/app/assets/stylesheets/packages/about/icon_links.scss */
+.pencil_icon {
+  background-image: url("landing/about/pencil.svg");
+  background-image: url("landing/about/pencil.svg");
+}
+
+/* line 20, /amy/Infa/Ruby_progs/ErikMusinProject/app/assets/stylesheets/packages/about/icon_links.scss */
+.pencil_icon:hover {
+  background-image: url("landing/about-green/pencil.svg");
+  background-image: url("landing/about-green/pencil.svg");
+}
+
+/* line 3, /amy/Infa/Ruby_progs/ErikMusinProject/app/assets/stylesheets/packages/contacts/contacts.scss */
+.contacts_full_back {
+  background: url("landing/vector-contacts/texture-contact.png") #fffbf2 center center/auto;
+  background: url("landing/vector-contacts/texture-contact.png") #fffbf2 center center/auto;
+}
+
+/* line 7, /amy/Infa/Ruby_progs/ErikMusinProject/app/assets/stylesheets/packages/contacts/contacts.scss */
+.page-wrap {
+  min-height: 100%;
+  /* equal to footer height */
+  margin-bottom: -185px;
+}
+
+/* line 13, /amy/Infa/Ruby_progs/ErikMusinProject/app/assets/stylesheets/packages/contacts/contacts.scss */
+.page-wrap:after {
+  content: "";
+  display: block;
+}
+
+/* line 18, /amy/Infa/Ruby_progs/ErikMusinProject/app/assets/stylesheets/packages/contacts/contacts.scss */
+.site-footer, .page-wrap:after {
+  /* .push must be the same height as footer */
+  height: 160px;
+}
+
+/* line 23, /amy/Infa/Ruby_progs/ErikMusinProject/app/assets/stylesheets/packages/contacts/contacts.scss */
+.site-footer {
+  background: orange;
+}
+
+/* line 27, /amy/Infa/Ruby_progs/ErikMusinProject/app/assets/stylesheets/packages/contacts/contacts.scss */
+.jerry_footer {
+  background: url("landing/vector-contacts/Jerry_cut.png") left center/auto no-repeat, url("landing/vector-contacts/texture-contact.png") center center/auto;
+  background: url("landing/vector-contacts/Jerry_cut.png") left center/auto no-repeat, url("landing/vector-contacts/texture-contact.png") center center/auto;
+}
+
+/* line 32, /amy/Infa/Ruby_progs/ErikMusinProject/app/assets/stylesheets/packages/contacts/contacts.scss */
+.jerry_back {
+  background: url("landing/vector-contacts/texture-contact.png") center center/auto;
+  background: url("landing/vector-contacts/texture-contact.png") center center/auto;
+}
+
+/* line 6, /amy/Infa/Ruby_progs/ErikMusinProject/app/assets/stylesheets/packages/contacts/divs.scss */
+.half_pack {
+  height: 160px;
+  line-height: 160px;
+  position: relative;
+}
+
+/* line 13, /amy/Infa/Ruby_progs/ErikMusinProject/app/assets/stylesheets/packages/contacts/divs.scss */
+.land_cont_img_mail {
+  position: absolute;
+  width: 85px;
+  right: 0;
+}
+
+/* line 19, /amy/Infa/Ruby_progs/ErikMusinProject/app/assets/stylesheets/packages/contacts/divs.scss */
+.land_cont_img_vk {
+  position: absolute;
+  width: 85px;
+  left: 0;
+}
+
+/* line 25, /amy/Infa/Ruby_progs/ErikMusinProject/app/assets/stylesheets/packages/contacts/divs.scss */
+.land_cont_title_mail {
+  position: absolute;
+  right: 105px;
+}
+
+/* line 30, /amy/Infa/Ruby_progs/ErikMusinProject/app/assets/stylesheets/packages/contacts/divs.scss */
+.land_cont_title_vk {
+  position: absolute;
+  left: 105px;
+}
+
+/* line 35, /amy/Infa/Ruby_progs/ErikMusinProject/app/assets/stylesheets/packages/contacts/divs.scss */
+.land_cont_inner_vk {
+  right: 3px;
+}
+
+/* line 39, /amy/Infa/Ruby_progs/ErikMusinProject/app/assets/stylesheets/packages/contacts/divs.scss */
+.land_cont_inner_mail {
+  left: 3px;
+}
+
+@-webkit-keyframes left_move {
+  /* line 2, /amy/Infa/Ruby_progs/ErikMusinProject/app/assets/stylesheets/packages/contacts/motions.scss */
+  0% {
+    -webkit-transform: translateX(115%);
+  }
+
+  /* line 5, /amy/Infa/Ruby_progs/ErikMusinProject/app/assets/stylesheets/packages/contacts/motions.scss */
+  100% {
+    -webkit-transform: translateX(0);
+  }
+}
+
+@-moz-keyframes left_move {
+  /* line 2, /amy/Infa/Ruby_progs/ErikMusinProject/app/assets/stylesheets/packages/contacts/motions.scss */
+  0% {
+    -moz-transform: translateX(115%);
+  }
+
+  /* line 5, /amy/Infa/Ruby_progs/ErikMusinProject/app/assets/stylesheets/packages/contacts/motions.scss */
+  100% {
+    -moz-transform: translateX(0);
+  }
+}
+
+@keyframes left_move {
+  /* line 2, /amy/Infa/Ruby_progs/ErikMusinProject/app/assets/stylesheets/packages/contacts/motions.scss */
+  0% {
+    -webkit-transform: translateX(115%);
+    -moz-transform: translateX(115%);
+    -ms-transform: translateX(115%);
+    -o-transform: translateX(115%);
+    transform: translateX(115%);
+  }
+
+  /* line 5, /amy/Infa/Ruby_progs/ErikMusinProject/app/assets/stylesheets/packages/contacts/motions.scss */
+  100% {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+@-webkit-keyframes right_move {
+  /* line 11, /amy/Infa/Ruby_progs/ErikMusinProject/app/assets/stylesheets/packages/contacts/motions.scss */
+  0% {
+    -webkit-transform: translateX(-115%);
+  }
+
+  /* line 14, /amy/Infa/Ruby_progs/ErikMusinProject/app/assets/stylesheets/packages/contacts/motions.scss */
+  100% {
+    -webkit-transform: translateX(0);
+  }
+}
+
+@-moz-keyframes right_move {
+  /* line 11, /amy/Infa/Ruby_progs/ErikMusinProject/app/assets/stylesheets/packages/contacts/motions.scss */
+  0% {
+    -moz-transform: translateX(-115%);
+  }
+
+  /* line 14, /amy/Infa/Ruby_progs/ErikMusinProject/app/assets/stylesheets/packages/contacts/motions.scss */
+  100% {
+    -moz-transform: translateX(0);
+  }
+}
+
+@keyframes right_move {
+  /* line 11, /amy/Infa/Ruby_progs/ErikMusinProject/app/assets/stylesheets/packages/contacts/motions.scss */
+  0% {
+    -webkit-transform: translateX(-115%);
+    -moz-transform: translateX(-115%);
+    -ms-transform: translateX(-115%);
+    -o-transform: translateX(-115%);
+    transform: translateX(-115%);
+  }
+
+  /* line 14, /amy/Infa/Ruby_progs/ErikMusinProject/app/assets/stylesheets/packages/contacts/motions.scss */
+  100% {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+@-webkit-keyframes appear {
+  /* line 20, /amy/Infa/Ruby_progs/ErikMusinProject/app/assets/stylesheets/packages/contacts/motions.scss */
+  0% {
+    opacity: 0;
+  }
+
+  /* line 23, /amy/Infa/Ruby_progs/ErikMusinProject/app/assets/stylesheets/packages/contacts/motions.scss */
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes appear {
+  /* line 20, /amy/Infa/Ruby_progs/ErikMusinProject/app/assets/stylesheets/packages/contacts/motions.scss */
+  0% {
+    opacity: 0;
+  }
+
+  /* line 23, /amy/Infa/Ruby_progs/ErikMusinProject/app/assets/stylesheets/packages/contacts/motions.scss */
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes appear {
+  /* line 20, /amy/Infa/Ruby_progs/ErikMusinProject/app/assets/stylesheets/packages/contacts/motions.scss */
+  0% {
+    opacity: 0;
+  }
+
+  /* line 23, /amy/Infa/Ruby_progs/ErikMusinProject/app/assets/stylesheets/packages/contacts/motions.scss */
+  100% {
+    opacity: 1;
+  }
+}
+
+/* line 28, /amy/Infa/Ruby_progs/ErikMusinProject/app/assets/stylesheets/packages/contacts/motions.scss */
+.mail_animation {
+  -webkit-animation: left_move 0.7s, appear 1s ease;
+  -moz-animation: left_move 0.7s, appear 1s ease;
+  animation: left_move 0.7s, appear 1s ease;
+}
+
+/* line 32, /amy/Infa/Ruby_progs/ErikMusinProject/app/assets/stylesheets/packages/contacts/motions.scss */
+.vk_animation {
+  -webkit-animation: right_move 0.7s, appear 1s ease;
+  -moz-animation: right_move 0.7s, appear 1s ease;
+  animation: right_move 0.7s, appear 1s ease;
+}
+
+/* line 1, /amy/Infa/Ruby_progs/ErikMusinProject/app/assets/stylesheets/packages/illustrations.scss */
+.illustration_extra_inner {
+  width: 70%;
+  margin-left: 15%;
+}
+
+/* line 6, /amy/Infa/Ruby_progs/ErikMusinProject/app/assets/stylesheets/packages/illustrations.scss */
+.illustrations_inner {
+  display: inline-block;
+  margin-left: 60px;
+  margin-bottom: 50px;
+  width: 430px;
+  height: 430px;
+  text-align: left;
+  background: url(load.gif) center center/auto no-repeat;
+  background: url(load.gif) center center/auto no-repeat;
+}
+
+/* line 1, /amy/Infa/Ruby_progs/ErikMusinProject/app/assets/stylesheets/packages/letterings.scss */
+.letterings_inner {
+  display: inline-block;
+  margin-left: 40px;
+  margin-bottom: 30px;
+  width: 250px;
+  height: 250px;
+  text-align: left;
+  background: url(load.gif) center center/auto no-repeat;
+  background: url(load.gif) center center/auto no-repeat;
+}
+
+/* line 1, /amy/Infa/Ruby_progs/ErikMusinProject/app/assets/stylesheets/packages/logos.scss */
+.logos_inner {
+  display: inline-block;
+  margin-left: 50px;
+  margin-bottom: 30px;
+  width: 310px;
+  height: 310px;
+  text-align: left;
+  background: url(load.gif) center center/auto no-repeat;
+  background: url(load.gif) center center/auto no-repeat;
+}
+
+/* line 1, /amy/Infa/Ruby_progs/ErikMusinProject/app/assets/stylesheets/sizes/general.scss */
+.w_full {
+  width: 100%;
+}
+
+/* line 5, /amy/Infa/Ruby_progs/ErikMusinProject/app/assets/stylesheets/sizes/general.scss */
+.h_full {
+  height: 100%;
+}
+
+/* line 1, /amy/Infa/Ruby_progs/ErikMusinProject/app/assets/stylesheets/sizes/heights.scss */
+.h2 {
+  height: 2px;
+}
+
+/* line 5, /amy/Infa/Ruby_progs/ErikMusinProject/app/assets/stylesheets/sizes/heights.scss */
+.h30 {
+  height: 30px;
+}
+
+/* line 9, /amy/Infa/Ruby_progs/ErikMusinProject/app/assets/stylesheets/sizes/heights.scss */
+.h100 {
+  height: 100px;
+}
+
+/* line 13, /amy/Infa/Ruby_progs/ErikMusinProject/app/assets/stylesheets/sizes/heights.scss */
+.h150 {
+  height: 150px;
+}
+
+/* line 17, /amy/Infa/Ruby_progs/ErikMusinProject/app/assets/stylesheets/sizes/heights.scss */
+.h160 {
+  height: 160px;
+}
+
+/* line 21, /amy/Infa/Ruby_progs/ErikMusinProject/app/assets/stylesheets/sizes/heights.scss */
+.h250 {
+  height: 250px;
+}
+
+/* line 1, /amy/Infa/Ruby_progs/ErikMusinProject/app/assets/stylesheets/sizes/line_heights.scss */
+.lh160 {
+  line-height: 160px;
+}
+
+/* line 1, /amy/Infa/Ruby_progs/ErikMusinProject/app/assets/stylesheets/sizes/widths.scss */
+.w100 {
+  width: 100px;
+}
+
+/* line 5, /amy/Infa/Ruby_progs/ErikMusinProject/app/assets/stylesheets/sizes/widths.scss */
+.w160 {
+  width: 160px;
+}
+
+/* line 9, /amy/Infa/Ruby_progs/ErikMusinProject/app/assets/stylesheets/sizes/widths.scss */
+.w270 {
+  width: 270px;
+}
+
+/* line 13, /amy/Infa/Ruby_progs/ErikMusinProject/app/assets/stylesheets/sizes/widths.scss */
+.w300 {
+  width: 300px;
+}
+
+/* line 17, /amy/Infa/Ruby_progs/ErikMusinProject/app/assets/stylesheets/sizes/widths.scss */
+.w350 {
+  width: 350px;
+}
+
+/* line 21, /amy/Infa/Ruby_progs/ErikMusinProject/app/assets/stylesheets/sizes/widths.scss */
+.w400 {
+  width: 400px;
+}
+
+/* line 25, /amy/Infa/Ruby_progs/ErikMusinProject/app/assets/stylesheets/sizes/widths.scss */
+.w500 {
+  width: 500px;
+}
+
+/* line 29, /amy/Infa/Ruby_progs/ErikMusinProject/app/assets/stylesheets/sizes/widths.scss */
+.w560 {
+  width: 560px;
+}
+
+/* line 33, /amy/Infa/Ruby_progs/ErikMusinProject/app/assets/stylesheets/sizes/widths.scss */
+.w600 {
+  width: 600px;
+}
+
+/* line 37, /amy/Infa/Ruby_progs/ErikMusinProject/app/assets/stylesheets/sizes/widths.scss */
+.w700 {
+  width: 700px;
+}
+
+/* line 41, /amy/Infa/Ruby_progs/ErikMusinProject/app/assets/stylesheets/sizes/widths.scss */
+.w800 {
+  width: 800px;
+}
+
+/* line 45, /amy/Infa/Ruby_progs/ErikMusinProject/app/assets/stylesheets/sizes/widths.scss */
+.w1200 {
+  width: 1200px;
+}
+
+/* line 49, /amy/Infa/Ruby_progs/ErikMusinProject/app/assets/stylesheets/sizes/widths.scss */
+.w1520 {
+  width: 1520px;
+}

@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @art_logo.name %>
+</p>
+
+<p>
+    <strong>Order:</strong>
+    <%= @art_logo.show_index %>
+</p>
+
+<p>
+    <strong>Image:</strong>
+    <%= image_tag @art_logo.image %>
+</p>
+
+<%= link_to 'Edit', edit_art_logo_path(@art_logo) %> |
+<%= link_to 'Back', art_logos_path %>
