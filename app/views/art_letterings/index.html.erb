@@ -1,0 +1,40 @@
+<h1>Listing art_letterings</h1>
+
+<div class="admin_actions_table">
+    <h3 class="wm150">
+        <%= link_to 'New Art lettering', new_art_lettering_path %>
+    </h3>
+    <h3 class="wm150">
+        <%= link_to 'Add defaults', {controller: 'art_letterings', action: 'add_defaults'}, data: {confirm: 'Are you sure?'} %>
+    </h3>
+    <h3 class="wm150">
+        <%= link_to 'Clean all', {controller: 'art_letterings', action: 'clean'}, data: {confirm: 'Are you sure?'} %>
+    </h3>
+
+</div>
+
+<table>
+    <thead>
+    <tr>
+        <th class="wm150" style="text-align: center;">Name</th>
+        <th class="wm150">Show index</th>
+        <th class="wm150">Image</th>
+        <th class="wm500" colspan="5"></th>
+    </tr>
+    </thead>
+
+    <tbody>
+    <% @art_letterings.each do |art_lettering| %>
+        <tr>
+            <td class="centered_text"><%= art_lettering.name %></td>
+            <td class="centered_text"><%= art_lettering.show_index %></td>
+            <td class="centered_text"><%= image_tag(art_lettering.image, style: "width: 100px; height: 100px;") %></td>
+            <td><%= link_to 'Show', art_lettering %></td>
+            <td><%= link_to 'Edit', edit_art_lettering_path(art_lettering) %></td>
+            <td ><%= link_to 'Destroy', art_lettering, method: :delete, data: {confirm: 'Are you sure?'} %></td>
+            <td class=""><%= link_to '  ^^^  ', [:move_up, art_lettering] %></td>
+            <td class=""><%= link_to '  \/  ', [:move_down, art_lettering] %></td>
+        </tr>
+    <% end %>
+    </tbody>
+</table>

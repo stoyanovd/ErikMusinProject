@@ -1,0 +1,2 @@
+module ArtLetteringsHelper
+end
