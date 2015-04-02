@@ -7,7 +7,9 @@ class LogosController < ApplicationController
   include ApplicationHelper
 
   def index
-    @logos = get_dir_entries("app/assets/images/pngs/logo")
+    # @logos = get_dir_entries("app/assets/images/pngs/logo")
+    @logos = ArtLogo.order('show_index')
+    @logos.reverse_order!
   end
 
   # GET /logos/1

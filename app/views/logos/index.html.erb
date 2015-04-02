@@ -1,12 +1,8 @@
 <% @logos.each do |logo| %>
     <div class="letterings_inner">
-        <%= image_tag "pngs/logo/"+ logo, class: "letterings_inner_image" %>
+        <%= image_tag logo.image, class: "letterings_inner_image" %>
         <div class="letterings_inner_text hidden">
-            <% r_ind = logo.rindex('.') %>
-            <% if r_ind != nil %>
-                <% logo = logo[0..r_ind - 1] %>
-            <% end %>
-            <%= logo %>
+            <%= logo.name %>
         </div>
     </div>
 <% end %>

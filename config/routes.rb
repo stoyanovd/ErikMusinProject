@@ -1,5 +1,16 @@
 Rails.application.routes.draw do
-  
+
+  resources :art_logos do
+    member do
+      get :move_up
+      get :move_down
+    end
+    collection do
+      get :add_defaults
+      get :clean
+    end
+  end
+
   root "landing#index"
 
   get 'contacts' => "landing#contacts"
@@ -23,7 +34,7 @@ Rails.application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
   #You can have the root of your site routed with "root"
-  
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
