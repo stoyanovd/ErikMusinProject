@@ -1,6 +1,6 @@
 class ArtIllustrationInner < ActiveRecord::Base
 
-  belongs_to :art_illustration, :dependent => :destroy
+  belongs_to :art_illustration
 
 
   validates :show_index, presence: true, numericality: true

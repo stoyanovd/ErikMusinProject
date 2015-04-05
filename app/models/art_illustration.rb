@@ -1,7 +1,7 @@
 class ArtIllustration < ActiveRecord::Base
 
 
-  has_many :art_illustration_inners
+  has_many :art_illustration_inners, :dependent => :destroy
   accepts_nested_attributes_for :art_illustration_inners, :reject_if => :all_blank, :allow_destroy => true
 
 
