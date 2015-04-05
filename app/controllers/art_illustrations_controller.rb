@@ -66,7 +66,6 @@ class ArtIllustrationsController < ApplicationController
 
   def move_down
     ShowIndexesHelper.move_down(@art_illustration, ArtIllustration)
-    @art_illustration.
     redirect_to art_illustrations_url, notice: 'moves down'
   end
 
