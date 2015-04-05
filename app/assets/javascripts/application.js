@@ -13,6 +13,7 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
+//= require cocoon
 //= require_tree .
 
 function initPage() {
@@ -41,8 +42,11 @@ function initPage() {
     });
 
     $(".letterings_inner").hover(function () {
-        $(this).children(".letterings_inner_image").toggleClass("half_opacity");
-        $(this).children(".letterings_inner_text").toggleClass("hidden");
+        $(this).find(".letterings_inner_image").addClass("half_opacity");
+        $(this).find(".letterings_inner_text").removeClass("hidden");
+    }, function () {
+        $(this).find(".letterings_inner_image").removeClass("half_opacity");
+        $(this).find(".letterings_inner_text").addClass("hidden");
     });
 
 }

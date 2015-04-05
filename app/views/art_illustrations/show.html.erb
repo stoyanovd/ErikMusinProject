@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @art_illustration.name %>
+</p>
+
+<p>
+  <strong>Show index:</strong>
+  <%= @art_illustration.show_index %>
+</p>
+
+<p>
+  <strong>Back color:</strong>
+  <%= @art_illustration.back_color %>
+</p>
+
+<%= link_to 'Edit', edit_art_illustration_path(@art_illustration) %> |
+<%= link_to 'Back', art_illustrations_path %>

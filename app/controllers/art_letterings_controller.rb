@@ -65,12 +65,12 @@ class ArtLetteringsController < ApplicationController
 
 
   def move_up
-    ShowIndexesHelper.move_up(@art_lettering)
+    ShowIndexesHelper.move_up(@art_lettering, ArtLettering)
     redirect_to art_letterings_url, notice: 'moves up'
   end
 
   def move_down
-    ShowIndexesHelper.move_down(@art_lettering)
+    ShowIndexesHelper.move_down(@art_lettering, ArtLettering)
     redirect_to art_letterings_url, notice: 'moves down'
   end
 

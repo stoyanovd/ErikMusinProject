@@ -1,0 +1,38 @@
+<h1>Listing Art Illustration Inners</h1>
+
+
+<div class="admin_actions_table">
+
+    <h3 class="wm150">
+        <%= link_to 'Clean all', {controller: 'art_illustration_inners', action: 'clean'}, data: {confirm: 'Are you sure?'} %>
+    </h3>
+
+</div>
+
+<table>
+    <thead>
+    <tr>
+        <th class="wm150">Art Illustration Image</th>
+        <th class="wm150" style="text-align: center;">Art Illustration</th>
+        <th class="wm150">Show index</th>
+        <th class="wm150">Image</th>
+        <th class="wm500" colspan="5"></th>
+    </tr>
+    </thead>
+
+    <tbody>
+    <% @art_illustration_inners.each do |art_illustration_inner| %>
+        <tr>
+            <% if art_illustration_inner.art_illustration != nil %>
+                <td class="centered_text"><%= image_tag art_illustration_inner.art_illustration.image, style: "width: 100px; height: 100px;" %></td>
+                <td class="centered_text"><%= art_illustration_inner.art_illustration.name %></td>
+            <% else %>
+                <td class="centered_text"> Error</td>
+                <td class="centered_text"> NO parent</td>
+            <% end %>
+            <td class="centered_text"><%= art_illustration_inner.show_index %></td>
+            <td class="centered_text"><%= image_tag(art_illustration_inner.image, style: "width: 100px; height: 100px;") %></td>
+        </tr>
+    <% end %>
+    </tbody>
+</table>

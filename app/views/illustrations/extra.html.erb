@@ -1,32 +1,19 @@
-<div class="w_full"
-     <%= 'style="background-color:'.html_safe %>
-     <% case @pckg %>
-     <% when "BASE" %>
-     <%= "#282932" %>
-     <% when "BLUE MAGIC" %>
-     <%= "#3F435E" %>
-     <% when "get taxi" %>
-     <%= "#ffffff" %>
-     <% when "GRAPHICS" %>
-     <%= "#14181B" %>
-     <% when "ORIGINAL" %>
-     <%= "#7FBDB2" %>
-     <% when "POSTER BASE" %>
-     <%= "#FFFFFF" %>
-     <% else %>
-     <%= "#FFFFFF" %>
-     <% end %>
-     <%= ';"'.html_safe %> >
+<div class="w_full custom_back main_part_top_padding">
+
 
     <%= render file: "landing/menu" %>
 
-    <% @illustrations.each do |illustration| %>
-        <%= image_tag "pngs/illustration/" + @pckg + "/" + illustration, class: "illustration_extra_inner" %>
+    <% @pckg.art_illustration_inners.each do |inner| %>
+        <%= image_tag inner.image, class: "illustration_extra_inner" %>
     <% end %>
 </div>
 
 <style>
     .triangle_illustration {
         visibility: visible;
+    }
+
+    .custom_back {
+        background-color: <%= @pckg.back_color.html_safe %>;
     }
 </style>

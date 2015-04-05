@@ -1,6 +1,28 @@
 Rails.application.routes.draw do
 
 
+  resources :art_illustration_inners do
+    member do
+      get :move_up
+      get :move_down
+    end
+    collection do
+      get :add_defaults
+      get :clean
+    end
+  end
+  
+  resources :art_illustrations do
+    member do
+      get :move_up
+      get :move_down
+    end
+    collection do
+      get :add_defaults
+      get :clean
+    end
+  end
+  
   resources :art_logos do
     member do
       get :move_up

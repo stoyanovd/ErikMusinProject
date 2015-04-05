@@ -16,33 +16,39 @@ module ShowIndexesHelper
   end
 
 
-  def self.move_up(item)
-    previous = get_previous(item)
+  def self.move_forward(item, db)
+    previous = get_previous(item, db)
     if previous != nil
       swapping_show_indexes(item, previous)
       item.save
       previous.save
     end
-    redirect_to art_logos_url, notice: 'moves up'
   end
 
-  def self.move_down(item)
-    successive= get_successive(item)
+  def self.move_backward(item, db)
+    successive= get_successive(item, db)
     if successive != nil
       swapping_show_indexes(item, successive)
       item.save
       successive.save
     end
-    redirect_to art_logos_url, notice: 'moves down'
+  end
+
+  def self.move_up(item, db)
+    move_backward(item, db) # depends on styling
+  end
+
+  def self.move_down(item, db)
+    move_forward(item, db) # depends on styling
   end
 
 
-  def self.get_previous(item)
-    ArtLogo.where('show_index < ?', item.show_index).order('show_index').last
+  def self.get_previous(item, db)
+    db.where('show_index < ?', item.show_index).order('show_index').last
   end
 
-  def self.get_successive(item)
-    ArtLogo.where('show_index > ?', item.show_index).order('show_index').first
+  def self.get_successive(item, db)
+    db.where('show_index > ?', item.show_index).order('show_index').first
   end
 
 end

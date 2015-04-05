@@ -1,0 +1,30 @@
+<%= semantic_form_for @art_illustration, :html => { :multipart => true } do |f| %>
+    <%= f.inputs do %>
+        <%= f.input :name %>
+        <%= f.input :show_index %>
+        <%= f.input :back_color %>
+        <div class="field">
+            <% if @art_illustration.image? %>
+                <%= image_tag @art_illustration.image.url, class:"w100 h100" %> <br/>
+                Change
+            <% end %>
+
+        </div>
+        <%= f.input :image %>
+
+        <h3>Inners </h3>
+        <div id="art_illustration_inners">
+            <%= f.semantic_fields_for :art_illustration_inners do |inner| %>
+                <%= render 'art_illustration_inner_fields', f: inner %>
+            <% end %>
+            <div class="links">
+                <%= link_to_add_association 'add inner', f, :art_illustration_inners, data_association_insertion_method: :after %>
+            </div>
+        </div>
+    <% end %>
+
+    <%= f.actions do %>
+        <%= f.action :submit, as: :button %>
+        <%= f.action :cancel, as: :link %>
+    <% end %>
+<% end %>

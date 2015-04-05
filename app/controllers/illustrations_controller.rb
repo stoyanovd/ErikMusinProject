@@ -7,7 +7,8 @@ class IllustrationsController < ApplicationController
   include ApplicationHelper
 
   def index
-    @pckgs = get_dir_entries("app/assets/images/pngs/illustration")
+    ShowIndexesHelper.idealize_show_index(ArtIllustration)
+    @art_illustrations = ArtIllustration.order('show_index').reverse_order!
   end
 
   # GET /illustrations/1
@@ -16,12 +17,11 @@ class IllustrationsController < ApplicationController
   end
   
   def extra
-    @pckg = params[:package]
-    unless ["BASE" , "BLUE MAGIC" , "get taxi","GRAPHICS" ,"ORIGINAL","POSTER BASE"].include?(@pckg)
+    @pckg = ArtIllustration.find_by_name(params[:package])
+    print @pckg
+    if @pckg == nil
       render '/public/404.html', :status => '404' and return
     end
-    print @pckg
-    @illustrations = get_dir_entries("app/assets/images/pngs/illustration/" + @pckg)
     render 'extra', layout: 'without_menu'
   end
 

@@ -1,0 +1,34 @@
+<%= form_for(@art_illustration_inner) do |f| %>
+    <% if @art_illustration_inner.errors.any? %>
+        <div id="error_explanation">
+            <h2><%= pluralize(@art_illustration_inner.errors.count, "error") %> prohibited this art_illustration_inner
+                from being saved:</h2>
+
+            <ul>
+                <% @art_illustration_inner.errors.full_messages.each do |message| %>
+                    <li><%= message %></li>
+                <% end %>
+            </ul>
+        </div>
+    <% end %>
+
+    <div class="field">
+        <%= f.label :show_index %><br>
+        <%= f.number_field :show_index %>
+    </div>
+    <div class="field">
+        <%= f.label :art_illustration_id %><br>
+        <%= f.text_field :art_illustration_id %>
+    </div>
+    <div class="field">
+        <%= f.label :image %><br>
+        <%= f.file_field :image %>
+    </div>
+
+    <div>
+        <%= image_tag @art_illustration_inner.image %>
+    </div>
+    <div class="actions">
+        <%= f.submit %>
+    </div>
+<% end %>

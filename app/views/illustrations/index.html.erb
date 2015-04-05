@@ -1,17 +1,15 @@
-<div class="">
-    <% @pckgs.each do |pack| %>
-        <%= link_to("illustrations/extra/" + pack, class: "letterings_inner") do %>
-            <%= image_tag "pngs/illustration/"+ pack+ "/preview.png", class: "letterings_inner_image" %>
+<% @art_illustrations.each do |pack| %>
+    <div class="letterings_inner">
+        <%= link_to("illustrations/extra/" + pack.name, {class: ""}) do %>
+
+            <%= image_tag pack.image, class: "letterings_inner_image" %>
             <div class="letterings_inner_text hidden">
-                <% r_ind = pack.rindex('.') %>
-                <% if r_ind != nil %>
-                    <% pack = pack[0..r_ind - 1] %>
-                <% end %>
-                <%= pack %>
+                <%= pack.name %>
             </div>
+
         <% end %>
-    <% end %>
-</div>
+    </div>
+<% end %>
 
 
 <style>

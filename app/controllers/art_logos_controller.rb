@@ -60,12 +60,12 @@ class ArtLogosController < ApplicationController
 
 
   def move_up
-    ShowIndexesHelper.move_up(@art_logo)
+    ShowIndexesHelper.move_up(@art_logo, ArtLogo)
     redirect_to art_logos_url, notice: 'moves up'
   end
 
   def move_down
-    ShowIndexesHelper.move_down(@art_logo)
+    ShowIndexesHelper.move_down(@art_logo, ArtLogo)
     redirect_to art_logos_url, notice: 'moves down'
   end
 
