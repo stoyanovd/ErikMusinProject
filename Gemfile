@@ -38,6 +38,8 @@ gem 'bourbon'
 #  Nice server
 gem 'thin'
 
+gem 'oauth2'
+
 # Images
 gem 'paperclip'
 
