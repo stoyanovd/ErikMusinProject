@@ -18,20 +18,20 @@
         <div class="container_last light_color_font">
 
             <div class="half_pack over_hidden">
-                <a href="mailto:erikmworkk@gmail.com" class="mail_to_animate land_cont_title_mail erik_link_shadowed" style="">
-                    erikmusin@gmail.com
-                </a>
+                <%= link_to("mailto:" + CurContacts::CUR_EMAIL, {class: "mail_to_animate land_cont_title_mail erik_link_shadowed", style: ""}) do %>
+                    <%= CurContacts::CUR_EMAIL %>
+                <% end %>
 
-                <a href="mailto:erikmworkk@gmail.com" class="h160 jerry_back  land_cont_img_mail" style="">
-                    <%= image_tag "landing/vector-contacts/mail.svg", {class: "contact_link_image h30  pos_abs half_down land_cont_inner_mail", style: ""} %>
-                </a>
+                <%= link_to("mailto:" + CurContacts::CUR_EMAIL, {class: "h160 jerry_back land_cont_img_mail", style: ""}) do %>
+                    <%= image_tag "landing/vector-contacts/mail.svg", {class: "contact_link_image h30 pos_abs half_down land_cont_inner_mail", style: ""} %>
+                <% end %>
             </div>
 
             <div class="half_pack over_hidden">
-                <%= link_to("http://vk.com/erik_musin", {class: "vk_to_animate  land_cont_title_vk erik_link_shadowed", style: ""}) do %>
-                    http://vk.com/erik_musin
+                <%= link_to(CurContacts::CUR_VK, {class: "vk_to_animate  land_cont_title_vk erik_link_shadowed", style: ""}) do %>
+                    <%= CurContacts::CUR_VK %>
                 <% end %>
-                <%= link_to("http://vk.com/erik_musin", {class: "h160 jerry_back  land_cont_img_vk", style: ""}) do %>
+                <%= link_to(CurContacts::CUR_VK, {class: "h160 jerry_back  land_cont_img_vk", style: ""}) do %>
                     <%= image_tag "landing/vector-contacts/vk.svg", {class: "contact_link_image h30  pos_abs half_down land_cont_inner_vk", style: ""} %>
                 <% end %>
             </div>

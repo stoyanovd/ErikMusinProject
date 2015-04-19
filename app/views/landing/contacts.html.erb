@@ -1,13 +1,13 @@
 <div class="container_last jerry_footer light_color_font">
 
     <div class="half_pack over_hidden">
-        <a href="mailto:erikmusin@gmail.com" class="mail_to_animate land_cont_title_mail erik_link_shadowed" style="">
-            erikmusin@gmail.com
-        </a>
+        <%= link_to("mailto:" + CurContacts::CUR_EMAIL, {class: "mail_to_animate land_cont_title_mail erik_link_shadowed", style: ""}) do %>
+            <%= CurContacts::CUR_EMAIL %>
+        <% end %>
 
-        <a href="mailto:erikmusin@gmail.com" class="h160 jerry_back  land_cont_img_mail" style="">
-            <%= image_tag "landing/vector-contacts/mail.svg", {class: "contact_link_image h30  pos_abs half_down land_cont_inner_mail", style: ""} %>
-        </a>
+        <%= link_to("mailto:" + CurContacts::CUR_EMAIL, {class: "h160 jerry_back  land_cont_img_mail", style: ""}) do %>
+            <%= image_tag "landing/vector-contacts/mail.svg", {class: "contact_link_image h30 pos_abs half_down land_cont_inner_mail", style: ""} %>
+        <% end %>
     </div>
 
     <div class="half_pack over_hidden">

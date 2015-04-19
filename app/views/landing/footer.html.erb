@@ -18,10 +18,9 @@
                 <a href="http://instagram.com/mr_erikm" class="">
                     <div class="w_icon footer_insta_icon"></div>
                 </a>
-
-                <a href="mailto:erikmworkk@gmail.com">
+                <%= link_to("mailto:" + CurContacts::CUR_EMAIL, {class: "", style: ""}) do %>
                     <div class="w_icon footer_mail_icon" style="width:36px;"></div>
-                </a>
+                <% end %>
             </nav>
 
         </div>
