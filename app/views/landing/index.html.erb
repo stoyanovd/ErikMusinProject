@@ -43,9 +43,9 @@
             <a href="https://vk.com/erik_musin" class="">
                 <div class="w_icon vk_icon"></div>
             </a>
-            <a href="http://instagram.com/mr_erikm" class="">
+            <%= link_to("http://instagram.com/" + CurContacts::CUR_INSTAGRAM, {class: "", style: ""}) do %>
                 <div class="w_icon insta_icon"></div>
-            </a>
+            <% end %>
         </nav>
     </div>
 </div>

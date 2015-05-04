@@ -14,10 +14,10 @@
                 <a href="https://dribbble.com/Mrerik" class="">
                     <div class="w_icon footer_dribble_icon"></div>
                 </a>
-
-                <a href="http://instagram.com/mr_erikm" class="">
+                <%= link_to("http://instagram.com/" + CurContacts::CUR_INSTAGRAM, {class: "", style: ""}) do %>
                     <div class="w_icon footer_insta_icon"></div>
-                </a>
+                <% end %>
+
                 <%= link_to("mailto:" + CurContacts::CUR_EMAIL, {class: "", style: ""}) do %>
                     <div class="w_icon footer_mail_icon" style="width:36px;"></div>
                 <% end %>

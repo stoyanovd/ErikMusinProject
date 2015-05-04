@@ -5,4 +5,6 @@ module CurContacts
 
   CUR_VK = "https://vk.com/erik_musin"
 
+  CUR_INSTAGRAM = "erikmusin"
+
 end
